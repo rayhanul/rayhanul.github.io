@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome
 
-You can use the [editor on GitHub](https://github.com/rayhanul/rayhanul.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I am a graduate student in the Department of Computer Science at Iowa State University. My current research lies in the synergy between formal methods, robotics, and control theory. I am working in the Autonomous System Lab under the supervision of Dr. Nok. 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
