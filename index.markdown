@@ -4,7 +4,8 @@ title: About
 ---
 
 
-<img src="/images/shakespeare.png" class="right" />
+<img src="/images/shakespeare.png" class="right"  width="200" 
+     height="200" />
 Md. Rayhanul Islam is a PhD student in the department of computer science at Iowa State University. Rayhanul will receive his MS in Computer Science from Iowa State University in Spring 2024. Previously, he received his Master and Bachelor degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. His research interest include formal methods, software engineering, machine learning and robotics.
 
 
