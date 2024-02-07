@@ -9,17 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
-Please click here for details [\Resume/Md_Rayhanul_Islam_s_CV.pdf]
-<!-- 
-Education
+Please click here for details [\\Resume/Md_Rayhanul_Islam_s_CV.pdf]
+
+<!-- Education
 ======
 Ph.D. in Computer Science, Iowa State University, 2026 (Expecting )
-MS in Computer Science, Iowa State University, Spring 2024 --> -->
-<!-- * B.S. in Software Engineering, University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected) -->
+MS in Computer Science, Iowa State University, Spring 2024 
+* B.S. in Software Engineering, University, 2012
 
-<!-- Work experience
+
+* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected) 
+
+ Work experience
 ======
 * Summer 2015: Research Assistant
   * Github University
@@ -30,8 +32,8 @@ MS in Computer Science, Iowa State University, Spring 2024 --> -->
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
-   -->
-<!-- Skills
+
+Skills
 ======
 * Skill 1
 * Skill 2
@@ -60,4 +62,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams --> -->
+* Currently signed in to 43 different slack teams  -->
