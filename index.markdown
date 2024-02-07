@@ -21,6 +21,10 @@ int main(void){
 
 
 
+
+
+
+
 # Publications. 
 ### Thesis.  
 **1.  Quantifying inconsistencies in the partially observable environment. (In progress)
@@ -44,4 +48,9 @@ Malinda Dilhara, Haipeng Cai, John Jenkins ([tool](https://bitbucket.org/malinda
 
 **4. [Sensor platform for non-invasive ubiquitous current sensing](https://ieeexplore.ieee.org/abstract/document/7796322)** (ICST-2016)<br/>
 Malinda Dilhara, Jayathu Samarawickrama, Samitha Elvitigala -->
+
+
+# Education 
+
+# Fellowships 
 

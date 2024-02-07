@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 kbd {
-  background-color: #fafbfc;
+  /* background-color: #fafbfc; */
   border: 1px solid #c6cbd1;
   border-bottom-color: #959da5;
   border-radius: 3px;
