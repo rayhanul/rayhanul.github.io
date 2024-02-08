@@ -48,6 +48,18 @@ Iowa State University, Ames, Iowa
 ### Thesis.  
 **1.  Quantifying inconsistencies in the partially observable environment. (In progress)
 
+### Journal Papers
+
+**  Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
+    Abdus Satter, and Md Saeed Siddik. \"ABMMRS Eradicator: Improving
+    Accuracy in Recommending Move Methods for Web-based MVC Projects and
+    Libraries Using Method's External Dependencies.\" International
+    Journal of Software Engineering and Knowledge Engineering 30, no. 09
+    (2020): 1289-1307.
+
+### Conference Papers
+
+
 <!-- 
 ### Conference Papers.
 **1. [PyEvolve: Automating Frequent Code Changes in Python ML Systems](https://danny.cs.colorado.edu/papers/PyEvolve_ICSE2023.pdf)** (ICSE 2023: IEEE/ACM International Conference on Software Engineering)<br/> 
