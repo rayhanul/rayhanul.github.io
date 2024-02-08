@@ -47,12 +47,12 @@ int main(void){
 # Publications
 
 ### Thesis  
-** [Quantifying inconsistencies in the partially observable environment. (In progress)]
+- ** [Quantifying inconsistencies in the partially observable environment. (In progress)] **
 
 ### Journal Papers
 
-**  [ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and
-    Libraries Using Method's External Dependencies.] Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
+- **[ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and
+    Libraries Using Method's External Dependencies.] ** Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
     Abdus Satter, and Md Saeed Siddik. International
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
@@ -87,7 +87,7 @@ Malinda Dilhara, Jayathu Samarawickrama, Samitha Elvitigala -->
   **Model Checking:**                 Prism, Storm, NuSMV and Spin \
   **Robot Operating System:**         ROS \
   **Vehicle Simulator:**              CARLA \
-  **Languages:**                      English and Bengali (native) \
+  **Languages:**                      English and Bengali (native) 
 
 
 # Education 
