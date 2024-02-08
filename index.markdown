@@ -57,7 +57,7 @@ cGPA: 3.86.
 
 ### Graduate Teaching Assistant
  <!-- August 2021 - May 2022, January 2024 - Now -->
-&nbsp; 
+
 - COM S 227: Object Oriented Programming, Fall 2021
 - COM S 342: Principles of Programming Languages, Spring 2022
 - COM S 472/572: Artificial Intelligence, Spring 2024
