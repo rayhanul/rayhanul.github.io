@@ -50,9 +50,9 @@ cGPA: 3.86.
 
 #### Graduate Research Assistant 
 <!-- May 2022 - December 2023 -->
-##### Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
+&nbsp; Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
 
-##### Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
+&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
 
 
 #### Graduate Teaching Assistant
@@ -76,8 +76,8 @@ cGPA: 3.86.
     Abdus Satter, and Md Saeed Siddik. International
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
-
-<!-- ### Conference Papers -->
+<!-- 
+### Conference Papers -->
 
 
 # Skills
