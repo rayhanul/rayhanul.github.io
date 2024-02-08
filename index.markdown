@@ -34,10 +34,10 @@ Processing, Motion Strategy and its Application.
 &nbsp; **MS in Computer Science**, Iowa State University\
 cGPA: 3.80 (till now).
 
-&nbsp; **Master of Science in Software Engineering**, University of Dhaka\
+&nbsp; **MS in Software Engineering**, University of Dhaka\
 cGPA: 3.96.
 
-&nbsp; **Bachelor of Science in Software Engineering**, University of Dhaka\
+&nbsp; **BS in Software Engineering**, University of Dhaka\
 cGPA: 3.86.
 
 
@@ -64,12 +64,11 @@ cGPA: 3.86.
 # Publications
 
 ### Thesis  
-- ** Quantifying inconsistencies in the partially observable environment. (In progress) **
+- **Quantifying inconsistencies in the partially observable environment. (In progress)**
 
 ### Journal Papers
 
-- **ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and
-    Libraries Using Method's External Dependencies. ** Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
+- **ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and Libraries Using Method's External Dependencies.** Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
     Abdus Satter, and Md Saeed Siddik. International
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
