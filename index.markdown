@@ -6,7 +6,11 @@ title: About
 
 <img src="/images/shakespeare.png" class="right"  width="200" 
      height="200" />
-Md. Rayhanul Islam is a PhD student in the department of computer science at Iowa State University. Rayhanul will receive his MS in Computer Science from Iowa State University in Spring 2024. Previously, he received his Master and Bachelor degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. His research interest include formal methods, software engineering, machine learning and robotics.
+I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at Iowa State University. I will receive my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include formal methods, software engineering, machine learning, and robotics.
+
+
+
+I have a solid foundation in both web and software development knowledge using programming languages such as C, C++, Python, C#, Java, R, SQL, JavaScript, ASP.NET, CSS, and HTML. I am also adept at machine learning libraries such as Numpy, SciKit Learn, Pandas, Seaborn, SciPy, Pytorch, and Opacus. Additionally, I am proficient in model checking with tools like Prism, Storm, NuSMV, and Spin. Moreover, I am experienced in using the Robot Operating System (ROS) and the CARLA vehicle simulator for projects in AI, automation, and data-driven technologies. Currently, I am looking for an intern or full-time position in software development or formal verification.  
 
 
 
