@@ -69,7 +69,16 @@ Malinda Dilhara, Haipeng Cai, John Jenkins ([tool](https://bitbucket.org/malinda
 **4. [Sensor platform for non-invasive ubiquitous current sensing](https://ieeexplore.ieee.org/abstract/document/7796322)** (ICST-2016)<br/>
 Malinda Dilhara, Jayathu Samarawickrama, Samitha Elvitigala -->
 
+# Skills
 
+  **Programming Skills and Tools**   Python, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook
+  **Machine Learning**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch
+  **Model Checking**                 Prism, Storm, NuSMV and Spin
+  **Robot Operating System**         ROS
+  **Vehicle Simulator**              CARLA
+  **Languages**                      English and Bengali (native)
+
+  
 # Education 
 
 # Fellowships 
