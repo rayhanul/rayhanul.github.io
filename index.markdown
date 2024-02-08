@@ -27,8 +27,6 @@ int main(void){
 
 # Experiences
 
-## Graduate Teaching Assistant, January 2024 - Now
-Artificial Intelligence, Spring 2024
 
 
 ## Graduate Research Assistant, May 2022 - December 2023
@@ -37,11 +35,12 @@ Autonomous System Lab, Department of Computer Science, Iowa State University, Am
 Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
 
 
-## Graduate Teaching Assistant, August 2021 - May 2022
-Object Oriented Programming, Fall 2021
-
-Principles of Programming Languages, Spring 2022
-
+## Graduate Teaching Assistant, August 2021 - May 2022, January 2024 - Now
+Iowa State University, Ames, Iowa
+- COM S 227: Object Oriented Programming, Fall 2021
+- COM S 342: Principles of Programming Languages, Spring 2022
+- COM S 472/572: Artificial Intelligence, Spring 2024
+- COM S 402C: Computer Science Senior Project: Project in Computer Science, Spring 2024
 
 
 
