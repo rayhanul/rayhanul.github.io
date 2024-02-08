@@ -6,7 +6,7 @@ title: About
 
 <img src="/images/shakespeare.png" class="right"  width="200" 
      height="200" />
-I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at Iowa State University. I will receive my MS in Computer Science from Iowa State University in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include formal methods, software engineering, machine learning, and robotics.
+I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at Iowa State University. I will receive my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include formal methods, software engineering, machine learning, and robotics.
 
 
 
