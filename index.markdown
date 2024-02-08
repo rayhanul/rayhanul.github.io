@@ -23,6 +23,23 @@ int main(void){
 }
 {% endhighlight %} -->
 
+# Education
+
+&nbsp; **PhD Student**, Iowa State University\
+cGPA: 3.80 (till now), and Relevant Coursework: Machine Learning,
+Program Analysis, Artificial Intelligence, Algorithm Analysis and
+Design, Theory of Computation, Formal Methods, Natural Language
+Processing, Motion Strategy and its Application.
+
+&nbsp; **MS in Computer Science**, Iowa State University\
+cGPA: 3.80 (till now).
+
+&nbsp; **Master of Science in Software Engineering**, University of Dhaka\
+cGPA: 3.96.
+
+&nbsp; **Bachelor of Science in Software Engineering**, University of Dhaka\
+cGPA: 3.86.
+
 
 
 # Experiences
@@ -90,7 +107,5 @@ Malinda Dilhara, Jayathu Samarawickrama, Samitha Elvitigala -->
   **Languages:**                      English and Bengali (native) 
 
 
-# Education 
-
-# Fellowships 
+<!-- # Fellowships  -->
 
