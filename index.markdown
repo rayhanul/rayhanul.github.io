@@ -46,7 +46,7 @@ Iowa State University, Ames, Iowa
 
 # Publications. 
 ### Thesis.  
-**1.  Quantifying inconsistencies in the partially observable environment. (In progress)
+** Quantifying inconsistencies in the partially observable environment. (In progress)
 
 ### Journal Papers
 
