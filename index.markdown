@@ -44,16 +44,16 @@ int main(void){
 
 
 
-# Publications. 
-### Thesis.  
-** Quantifying inconsistencies in the partially observable environment. (In progress)
+# Publications
+
+### Thesis  
+** [Quantifying inconsistencies in the partially observable environment. (In progress)]
 
 ### Journal Papers
 
-**  Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
-    Abdus Satter, and Md Saeed Siddik. \"ABMMRS Eradicator: Improving
-    Accuracy in Recommending Move Methods for Web-based MVC Projects and
-    Libraries Using Method's External Dependencies.\" International
+**  [ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and
+    Libraries Using Method's External Dependencies.] Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
+    Abdus Satter, and Md Saeed Siddik. International
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
 
