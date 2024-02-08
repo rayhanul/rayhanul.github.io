@@ -72,15 +72,10 @@ Malinda Dilhara, Jayathu Samarawickrama, Samitha Elvitigala -->
 # Skills
 
   **Programming Skills and Tools:**   Python, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook
-
   **Machine Learning:**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch
-
   **Model Checking:**                 Prism, Storm, NuSMV and Spin
-
   **Robot Operating System:**         ROS
-
   **Vehicle Simulator:**              CARLA
-  
   **Languages:**                      English and Bengali (native)
 
 
