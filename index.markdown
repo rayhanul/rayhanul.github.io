@@ -48,14 +48,14 @@ cGPA: 3.86.
 ## Graduate  Assistant, August 2021 - Now
  &nbsp; Iowa State University, Ames, Iowa
 
-### Graduate Research Assistant 
+#### Graduate Research Assistant 
 <!-- May 2022 - December 2023 -->
-&nbsp; Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
+##### Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
 
-&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
+##### Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
 
 
-### Graduate Teaching Assistant
+#### Graduate Teaching Assistant
  <!-- August 2021 - May 2022, January 2024 - Now -->
 
 - COM S 227: Object Oriented Programming, Fall 2021
@@ -77,7 +77,7 @@ cGPA: 3.86.
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
 
-### Conference Papers
+<!-- ### Conference Papers -->
 
 
 # Skills
