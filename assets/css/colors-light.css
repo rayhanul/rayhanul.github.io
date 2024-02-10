@@ -62,10 +62,15 @@ blockquote {
 
 
 .icon-iastate {
-	display: block;
-	width: 120px;
-	height: 31px;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	text-align: center;
+	line-height: 1.7;
 	background-image: url(/icons/iowa-state-cyclones-logo.png);
 	background-position: 0 0;
 	background-repeat: no-repeat;
+
+
+
   }
