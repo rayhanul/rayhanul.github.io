@@ -68,7 +68,7 @@ cGPA: 3.86.
 # Publications
 
 ### Thesis  
-- **Quantifying inconsistencies in the partially observable environment. (In progress)**
+- **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**
 
 ### Journal Papers
 
