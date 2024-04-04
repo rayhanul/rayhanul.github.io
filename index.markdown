@@ -52,7 +52,7 @@ cGPA: 3.86.
 <!-- May 2022 - December 2023 -->
 &nbsp; Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
 
-&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
+<!--&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project) -->
 
 
 #### **Graduate Teaching Assistant**
