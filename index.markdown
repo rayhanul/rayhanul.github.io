@@ -52,7 +52,7 @@ cGPA: 3.86.
 <!-- May 2022 - December 2023 -->
 &nbsp; Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
 
-&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project)
+<!--&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project) -->
 
 
 #### **Graduate Teaching Assistant**
@@ -68,7 +68,7 @@ cGPA: 3.86.
 # Publications
 
 ### Thesis  
-- **Quantifying inconsistencies in the partially observable environment. (In progress)**
+- **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**
 
 ### Conference Papers
 - **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems 2024 (Submitted).
