@@ -70,6 +70,9 @@ cGPA: 3.86.
 ### Thesis  
 - **Quantifying inconsistencies in the partially observable environment. (In progress)**
 
+### Conference Papers
+- **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems 2024 (Submitted).
+
 ### Journal Papers
 
 - **ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and Libraries Using Method's External Dependencies.** Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar,
@@ -84,7 +87,7 @@ cGPA: 3.86.
 
 # Skills
 
-  **Programming Skills and Tools:**   Python, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook \
+  **Programming Skills and Tools:**   Python, Rust, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook \
   **Machine Learning:**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch \
   **Model Checking:**                 Prism, Storm, NuSMV and Spin \
   **Robot Operating System:**         ROS \
