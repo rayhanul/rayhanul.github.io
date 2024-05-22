@@ -26,13 +26,13 @@ int main(void){
 # Education
 
 &nbsp; **PhD Student**, Iowa State University\
-cGPA: 3.80 (till now), and Relevant Coursework: Machine Learning,
+cGPA: 3.82 (till now), and Relevant Coursework: Machine Learning,
 Program Analysis, Artificial Intelligence, Algorithm Analysis and
 Design, Theory of Computation, Formal Methods, Natural Language
 Processing, Motion Strategy and its Application.
 
 &nbsp; **MS in Computer Science**, Iowa State University\
-cGPA: 3.80 (till now).
+cGPA: 3.82.
 
 &nbsp; **MS in Software Engineering**, University of Dhaka\
 cGPA: 3.96.
