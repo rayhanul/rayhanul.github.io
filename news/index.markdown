@@ -6,6 +6,9 @@ title: News
 
 <!-- Talk at [PPI Industry-University Collaborative Research Center](https://www.ppicenter.org) - 2020 ([slides](https://github.com/maldil/maldil.github.io/blob/master/slides/PPI2020.pptx))<br>
 Talk at ICST-2016 [Sensor platform for non-invasive ubiquitous current sensing](https://ieeexplore.ieee.org/abstract/document/7796322)  | China Nanjing (slides) -->
+## July 10, 2024
+
+My paper titled **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** has been accepted for publication at the 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), which will be held in Edmonton, Canada from September 24-27, 2024. 
 
 ## February 26, 2024
 I defended my final oral defense for MS in Computer Science on February 26, 2024. 

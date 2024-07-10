@@ -71,7 +71,7 @@ cGPA: 3.86.
 - **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**
 
 ### Conference Papers
-- **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), Edmonton, Canada, September 24-27, 2024, (Accepted) <a href="/documents/conferences/ieeeconf_paper_ITSC_2024.pdf">PDF</a>. 
+- **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments**, Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), Edmonton, Canada, September 24-27, 2024, (Accepted) <a href="/documents/conferences/ieeeconf_paper_ITSC_2024.pdf">PDF</a>. 
 
 ### Journal Papers
 
