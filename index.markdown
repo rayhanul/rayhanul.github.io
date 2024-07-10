@@ -6,7 +6,7 @@ title: About
 
 <img src="/images/shakespeare.png" class="right"  width="200" 
      height="200" />
-I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at [Iowa State University](https://www.iastate.edu). I will receive my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include formal methods, software engineering, machine learning, and robotics.
+I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at [Iowa State University](https://www.iastate.edu). I received my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include formal methods, software engineering, machine learning, and robotics.
 
 
 
@@ -71,7 +71,7 @@ cGPA: 3.86.
 - **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**
 
 ### Conference Papers
-- **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems 2024 (Submitted).
+- **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments** Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), Edmonton, Canada, September 24-27, 2024, (Accepted) <a href="/documents/conferences/ieeeconf_paper_ITSC_2024.pdf">PDF</a>. 
 
 ### Journal Papers
 
