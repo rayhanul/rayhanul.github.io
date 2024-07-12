@@ -89,7 +89,7 @@ cGPA: 3.86.
 
 -**Policy Evaluation on Uncertain Environment**, Course: COM S 676X: Advanced Topics in Autonomous Systems and Robotics, Fall 2023 <a href="/documents/project_report/COMS676X_Final_project.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS676_project">Artifact</a>.  
 
--**Optimum Motion Planning using $PRM^*$ and $RRT^*$**, Course: COM S 576: Motion Planning for Robotics and Autonomous Systems, Spring 2023, <a href="/documents/project_report/COMS576_project_final_report.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS576_Project">Artifact</a>.   
+-**Optimum Motion Planning using PRM\* and RRT\***, Course: COM S 576: Motion Planning for Robotics and Autonomous Systems, Spring 2023, <a href="/documents/project_report/COMS576_project_final_report.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS576_Project">Artifact</a>.   
 
  -**Vulnerability Detection using Program Slicing and Transformer-based Model**, Course: COM S 513 - Program Analysis, Fall 2022, <a href="/documents/project_report/513_Project_Report.pdf">PDF</a>.  
 
