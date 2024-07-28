@@ -68,7 +68,7 @@ cGPA: 3.86.
 # Publications
 
 ### Thesis  
-- **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**, <a href="https://dr.lib.iastate.edu/entities/publication/7bf993c8-9440-4721-94a0-23dbae715f7c"> PDF </a>. 
+- **Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles**, <a href="https://dr.lib.iastate.edu/handle/20.500.12876/dvmq9ZRv"> PDF </a>. 
 
 ### Conference Papers
 - **Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments**, Md Rayhanul Islam, Tichakorn Wongpiromsarn and Samik Basu. 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), Edmonton, Canada, September 24-27, 2024, (Accepted) <a href="/documents/conferences/ieeeconf_paper_ITSC_2024.pdf">PDF</a>. 
