@@ -6,8 +6,9 @@ title: About
 
 <img src="/images/shakespeare.png" class="right"  width="200" 
      height="200" />
-I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at [Iowa State University](https://www.iastate.edu). I received my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include Software security and memory safety, formal methods, and machine learning. 
+<!-- I am Md. Rayhanul Islam, currently pursuing PhD student in the Department of Computer Science at [Iowa State University](https://www.iastate.edu). I received my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include Software security and memory safety, formal methods, and machine learning.  -->
 
+I am Md. Rayhanul Islam. I have received my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include Software security and memory safety, formal methods, and machine learning. 
 
 
 I have a solid foundation in both web and software development knowledge using programming languages such as Rust, C, C++, Python, C#, Java, R, SQL, JavaScript, ASP.NET, CSS, and HTML. I am also adept at machine learning libraries such as Numpy, SciKit Learn, Pandas, Seaborn, SciPy, Pytorch, and Opacus. Additionally, I am proficient in model checking with tools like Prism, Storm, NuSMV, and Spin. Moreover, I am experienced in using the Robot Operating System (ROS) and the CARLA vehicle simulator for projects in AI, automation, and data-driven technologies. Currently, I am looking for an intern or full-time position in software development or formal verification.  
@@ -25,11 +26,11 @@ int main(void){
 
 # Education
 
-&nbsp; **PhD Student**, Iowa State University\
+<!-- &nbsp; **PhD Student**, Iowa State University\
 cGPA: 3.82 (till now), and Relevant Coursework: Machine Learning,
 Program Analysis, Artificial Intelligence, Algorithm Analysis and
 Design, Theory of Computation, Formal Methods, Natural Language
-Processing, Motion Strategy and its Application.
+Processing, Motion Strategy and its Application. -->
 
 &nbsp; **MS in Computer Science**, Iowa State University\
 cGPA: 3.82.
