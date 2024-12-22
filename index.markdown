@@ -11,7 +11,7 @@ title: About
 I am Md. Rayhanul Islam. I have received my MS in Computer Science from [Iowa State University](https://www.cs.iastate.edu/) in Spring 2024. Previously, I received my Master's and Bachelor's degree from [University of Dhaka](http://www.du.ac.bd/), Bangladesh. My current research interests include Software security and memory safety, formal methods, and machine learning. 
 
 
-I have a solid foundation in both web and software development knowledge using programming languages such as Rust, C, C++, Python, C#, Java, R, SQL, JavaScript, ASP.NET, CSS, and HTML. I am also adept at machine learning libraries such as Numpy, SciKit Learn, Pandas, Seaborn, SciPy, Pytorch, and Opacus. Additionally, I am proficient in model checking with tools like Prism, Storm, NuSMV, and Spin. Moreover, I am experienced in using the Robot Operating System (ROS) and the CARLA vehicle simulator for projects in AI, automation, and data-driven technologies. Currently, I am looking for an intern or full-time position in software development or formal verification.  
+I have a solid foundation in both web and software development using programming languages such as Rust, C, C++, Python, C#, Java, R, SQL, JavaScript, ASP.NET, CSS, and HTML. I am also adept at machine learning libraries such as Numpy, SciKit Learn, Pandas, Seaborn, SciPy, Pytorch, and Opacus. Additionally, I am proficient in both SAT solvers and model checking with tools like SAT, SMT (z3), Prism, Storm, NuSMV, and Spin. Moreover, I am experienced in using the Robot Operating System (ROS) and the CARLA vehicle simulator for projects in AI, automation, and data-driven technologies. Currently, I am looking for an intern or full-time position in software development or formal verification.  
 
 
 
