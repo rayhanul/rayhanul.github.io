@@ -46,12 +46,14 @@ cGPA: 3.86.
 # Experiences
 
 
-## Graduate  Assistant, August 2021 - Now
+## Graduate  Assistant, August 2021 - Spring 2024
  &nbsp; Iowa State University, Ames, Iowa
 
 #### **Graduate Research Assistant** 
 <!-- May 2022 - December 2023 -->
 &nbsp; Autonomous System Lab, Department of Computer Science, Iowa State University, Ames, Iowa
+
+&nbsp; Worked under the supervision of Dr. Tichakorn (Nok) Wongpiromsarn on measuing the safety and inconsistencies among hetorigenious agents in the partially observable environment. 
 
 <!--&nbsp; Project Title: Sharing the World with Autonomous Systems: What Goes Wrong and How to Fix It (NSF Project) -->
 
