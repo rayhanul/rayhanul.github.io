@@ -88,6 +88,13 @@ cGPA: 3.86.
 # Course Project 
 - **Custom Query Answering with RAG and Pre-Trained Models**, Course: COM S 579: Natural Language Processing, Spring 2024, <a href="https://github.com/rayhanul/COMS-579">Artifact</a>.   
 
+     In this project, the developed RAG system has features:
+
+          Upload/Add PDF files to a RAG platform/pipeline
+          Index the PDF files 
+          Query to the RAG system with a question and expect an answer based on the PDFs uploaded
+          An example demo using the Vectara AI platform is here <a href="https://rayhan0201-chatarticle.hf.space/">link</a>.   
+
 - **Policy Evaluation on Uncertain Environment**, Course: COM S 676X: Advanced Topics in Autonomous Systems and Robotics, Fall 2023 <a href="/documents/project_report/COMS676X_Final_project.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS676_project">Artifact</a>.  
 
 - **Optimum Motion Planning using PRM\* and RRT\***, Course: COM S 576: Motion Planning for Robotics and Autonomous Systems, Spring 2023, <a href="/documents/project_report/COMS576_project_final_report.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS576_Project">Artifact</a>.   
