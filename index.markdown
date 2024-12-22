@@ -88,7 +88,9 @@ cGPA: 3.86.
 # Course Project 
 - **Custom Query Answering with RAG and Pre-Trained Models**, Course: COM S 579: Natural Language Processing, Spring 2024, <a href="https://github.com/rayhanul/COMS-579">Artifact</a>.   
 
-     This project enables user to upload PDF files to a RAG platform and index the PDF files, then perform a query to the RAG system with a question and expect an answer based on the PDFs uploaded. An example demo is available here https://rayhan0201-chatarticle.hf.space.   
+     This project enables user to upload PDF files to a RAG platform and index the PDF files, then perform a query to the RAG system with a question and expect an answer based on the PDFs uploaded. An example demo is available here <a href="https://rayhan0201-chatarticle.hf.space">live demo</a>.
+     
+     
 
 - **Policy Evaluation on Uncertain Environment**, Course: COM S 676X: Advanced Topics in Autonomous Systems and Robotics, Fall 2023 <a href="/documents/project_report/COMS676X_Final_project.pdf">PDF</a>, <a href="https://github.com/rayhanul/COMS676_project">Artifact</a>.  
      This work evaluates the initial policy and decides whether it satisfies the safety property for all valuations of parameters in a given parameter space using formal verification techniques, and it also suggests a new policy if the initial policy fails.
