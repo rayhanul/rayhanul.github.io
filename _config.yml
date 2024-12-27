@@ -1,6 +1,9 @@
 name: Md Rayhanul Islam
 url: https://rayhanul.github.io
-description: “Tell me and I forget. Teach me and I remember. Involve me and I learn.” Benjamin Franklin
+# description: “Tell me and I forget. Teach me and I remember. Involve me and I learn.” Benjamin Franklin
+
+description : “I do not believe in taking the right decision, I take a decision and make it right.”
+# ― Muhammad Ali Jinnah
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
