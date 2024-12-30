@@ -89,7 +89,7 @@ cGPA: 3.86.
 
 # Course Project 
 
-- **RISC-V Simulator: Dynamic Branch Prediction and Data Cache**, Course: CSE 5302: Computer Architecture, Fall 2024,<a href="/documents/project_report/CSE_5302__Computer_Architecture_report.pdf">PDF</a>.  
+- **RISC-V Simulator: Dynamic Branch Prediction and Data Cache**, Course: CSE 5302: Computer Architecture, Fall 2024, <a href="/documents/project_report/CSE_5302__Computer_Architecture_report.pdf">PDF</a>.  
 
      This project implements three dynamic branch predictors (static, 1-level, and 2-level) and three data caching approaches (Direct Mapped cache, 2-way set associative, and 4-way set associative) on the RISC-V simulator. It compares the performance of each of the branch predictors considering branch misprediction rate and evaluates the efficacy of different caching approaches using cache hit rate. 
 
