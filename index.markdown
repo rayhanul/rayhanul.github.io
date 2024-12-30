@@ -88,6 +88,13 @@ cGPA: 3.86.
 ### Conference Papers -->
 
 # Course Project 
+
+- **RISC-V Simulator: Dynamic Branch Prediction and Data Cache**, Course: CSE 5302: Computer Architecture, Fall 2024,<a href="/documents/project_report/CSE_5302__Computer_Architecture_report.pdf">PDF</a>.  
+
+     This project implements three dynamic branch predictors (static, 1-level, and 2-level) and three data caching approaches (Direct Mapped cache, 2-way set associative, and 4-way set associative) on the RISC-V simulator. It compares the performance of each of the branch predictors considering branch misprediction rate and evaluates the efficacy of different caching approaches using cache hit rate. 
+
+
+
 - **Custom Query Answering with RAG and Pre-Trained Models**, Course: COM S 579: Natural Language Processing, Spring 2024, <a href="https://github.com/rayhanul/COMS-579">Artifact</a>.   
 
      This project enables user to upload PDF files to a RAG platform and index the PDF files, then perform a query to the RAG system with a question and expect an answer based on the PDFs uploaded. An example demo is available here <a href="https://rayhan0201-chatarticle.hf.space">live demo</a>.
