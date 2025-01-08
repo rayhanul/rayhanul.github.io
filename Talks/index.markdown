@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Presentations and Talks
+title: Talks
 ---
 # Talks
 
