@@ -88,7 +88,7 @@ cGPA: 3.86.
 
   **Programming Skills:**   Python, Java, C, C++, Rust, C\#, Shell scripting (Bash), and SQL  \
   **Machine Learning:**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch \
-  **Formal Verification tool:**                 Prism, Storm, NuSMV, Spin, SMT, SAT, Z3, CTL and LTL \
+  **Formal Verification Tools:**                 Prism, Storm, NuSMV, Spin, SMT, SAT, Z3, CTL and LTL \
   **DevOps \& Tools:**             Docker, Git, Makefile, LLVM, AFL, and Klee \
   **Robot Operating System:**         ROS \
   **Vehicle Simulator:**              CARLA \
