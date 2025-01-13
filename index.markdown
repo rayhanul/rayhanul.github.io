@@ -83,6 +83,16 @@ cGPA: 3.86.
     Journal of Software Engineering and Knowledge Engineering 30, no. 09
     (2020): 1289-1307.
 
+<!-- # Fellowships  -->
+# Skills
+
+  **Programming Skills and Tools:**   Python, Rust, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook \
+  **Machine Learning:**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch \
+  **Model Checking:**                 Prism, Storm, NuSMV and Spin \
+  **Robot Operating System:**         ROS \
+  **Vehicle Simulator:**              CARLA \
+  **Languages:**                      English and Bengali (native) 
+
 
 <!-- 
 ### Conference Papers -->
@@ -111,15 +121,6 @@ cGPA: 3.86.
  - **Vulnerability Detection using Program Slicing and Transformer-based Model**, Course: COM S 513 - Program Analysis, Fall 2022, <a href="/documents/project_report/513_Project_Report.pdf">PDF</a>.  
      This proposed approach makes slices based on the program points of interest where a generated slice is smaller in length than the function and includes statements from different parts of the function depending on the program point of interest.
 
-# Skills
-
-  **Programming Skills and Tools:**   Python, Rust, R, Java, C, C++, and C#, SQL, VS Code, Jupyter Notebook \
-  **Machine Learning:**               Numpy, SciKit Learn, Pandas, Seaborn, SciPy, and Pytorch \
-  **Model Checking:**                 Prism, Storm, NuSMV and Spin \
-  **Robot Operating System:**         ROS \
-  **Vehicle Simulator:**              CARLA \
-  **Languages:**                      English and Bengali (native) 
 
 
-<!-- # Fellowships  -->
 
