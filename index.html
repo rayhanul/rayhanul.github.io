@@ -1,49 +1,730 @@
----
-layout: default
-title: Solar Theme
----
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Md Rayhanul Islam | Time-Sensitive Networking &amp; Systems</title>
+        <meta name="description" content="Md Rayhanul Islam is a PhD student in Computer Science &amp; Engineering at the University of Connecticut researching time-sensitive networking, deterministic communication, and formal verification for autonomous and edge systems.">
+        <link rel="canonical" href="https://rayhanul.github.io/">
+        <meta property="og:type" content="profile">
+        <meta property="og:title" content="Md Rayhanul Islam | Time-Sensitive Networking &amp; Systems">
+        <meta property="og:description" content="PhD student at UConn researching time-sensitive networking, deterministic communication, and formal verification for autonomous and edge systems.">
+        <meta property="og:url" content="https://rayhanul.github.io/">
+        <meta property="og:image" content="https://rayhanul.github.io/assets/images/profile.jpg">
+        <meta property="og:image:alt" content="Md Rayhanul Islam">
+        <meta property="profile:first_name" content="Rayhanul">
+        <meta property="profile:last_name" content="Islam">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Md Rayhanul Islam | Time-Sensitive Networking &amp; Systems">
+        <meta name="twitter:description" content="PhD student at UConn researching time-sensitive networking, deterministic communication, and formal verification for autonomous and edge systems.">
+        <meta name="twitter:image" content="https://rayhanul.github.io/assets/images/profile.jpg">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Md Rayhanul Islam",
+                "url": "https://rayhanul.github.io/",
+                "image": "https://rayhanul.github.io/assets/images/profile.jpg",
+                "jobTitle": "PhD Student, Computer Science and Engineering",
+                "affiliation": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of Connecticut",
+                    "url": "https://www.uconn.edu/"
+                },
+                "alumniOf": [
+                    {"@type": "CollegeOrUniversity", "name": "Iowa State University"},
+                    {"@type": "CollegeOrUniversity", "name": "University of Dhaka"}
+                ],
+                "sameAs": [
+                    "https://github.com/rayhanul"
+                ],
+                "knowsAbout": [
+                    "Time-Sensitive Networking",
+                    "Deterministic Communication",
+                    "Network Scheduling",
+                    "Formal Verification",
+                    "Autonomous Systems Safety",
+                    "Edge AI"
+                ]
+            }
+        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231a7caa'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='white' text-anchor='middle'%3ERI%3C/text%3E%3C/svg%3E" />
+        <style>
+            :root {
+                --primary-color: #3273dc;
+                --secondary-color: #1a7caa;
+                --accent-color: #48c774;
+                --text-color: #363636;
+                --light-bg: #f5f7fa;
+                --border-color: #eaeaea;
+            }
 
-{% for post in paginator.posts %}
+            body {
+                font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                color: var(--text-color);
+                line-height: 1.6;
+                background-color: #ffffff;
+            }
 
-	<article class="post">
+            .title, h1, h2, h3, h4, h5, h6 {
+                font-family: "Source Serif 4", Georgia, serif;
+                font-weight: 600;
+                color: #222;
+                line-height: 1.2;
+            }
 
-		{% if post.external-url %}
-			<h1>
-				<a href="{{ post.external-url }}">{{ post.title }}</a>
-				<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-			</h1>
-		{% else %}
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		{% endif %}
+            .title.is-2 { font-size: 2.2rem; margin-bottom: 0.5rem; }
 
-		<div class="post-content">{{ post.content }}</div>
+            @media screen and (min-width: 1024px) {
+                .container { max-width: 1300px !important; }
+            }
+            @media screen and (min-width: 1600px) {
+                .container { max-width: 1600px !important; }
+            }
 
-	</article>
+            a { color: var(--secondary-color); text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.2s ease, border-bottom 0.2s ease; }
+            a:hover { color: var(--primary-color); border-bottom: 1px solid var(--primary-color); }
 
-{% endfor %}
+            .button { border-radius: 4px; font-weight: 500; transition: transform 0.2s ease; }
+            .button:hover { transform: translateY(-1px); }
 
+            .content { font-size: 1.05rem; }
+            .content a, .recent-news a { color: #156b8d; font-weight: 500; border-bottom: 1px solid rgba(21, 107, 141, 0.32); }
+            .content a:hover, .content a:focus-visible, .recent-news a:hover, .recent-news a:focus-visible { color: var(--primary-color); border-bottom-color: rgba(50, 115, 220, 0.58); }
+            .content p { margin-bottom: 1.2rem; }
+            .content ul { list-style-type: none; margin-left: 0; }
+            .content ul li { margin-bottom: 1rem; padding-left: 1.2rem; position: relative; }
+            .content ul li:before { content: "•"; position: absolute; left: 0; color: var(--secondary-color); }
 
+            .section { padding: 3rem 1.5rem; }
 
-{% if paginator.total_pages > 1 %}
-	<div class="postnavigation">
+            .profile-image-container {
+                width: 180px;
+                height: 180px;
+                margin: 0 auto;
+                position: relative;
+            }
 
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<a class="prev left" href="/">&larr; Newer</a>
-			{% else %}
-				<a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
-			{% endif %}
-		{% else %}
-			<span class="nope left">&larr; Newer</span>
-		{% endif %}
+            .profile-image {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid white;
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            }
 
-		<span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            .copyable-email { cursor: pointer; transition: color 0.3s ease; display: inline-flex; align-items: center; border-bottom: 1px dashed var(--border-color); padding-bottom: 2px; }
+            .copyable-email:hover { color: var(--primary-color); border-bottom: 1px dashed var(--primary-color); }
+            .copy-status { font-size: 0.8em; color: var(--accent-color); margin-left: 0.5em; font-weight: 500; }
+            .contact-info { text-align: left; }
 
-		{% if paginator.next_page %}
-			<a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
-		{% else %}
-			<span class="nope right">Older &rarr;</span>
-		{% endif %}
+            .footer { background-color: var(--light-bg); padding: 2rem 1.5rem; font-size: 0.9rem; }
 
-	</div>
-{% endif %}
+            /* Prevent long unbreakable content from forcing a flex column wider
+               than its allotted width, which pushes it into the sidebar. */
+            .columns.is-desktop { align-items: flex-start; }
+            .columns.is-desktop > .column.is-8-desktop,
+            .columns.is-desktop > .column.is-4-desktop {
+                min-width: 0;
+                overflow-wrap: break-word;
+            }
+
+            .sidebar-panel { background-color: var(--light-bg); padding: 1.5rem; border-radius: 6px; }
+            .sidebar-panel + .sidebar-panel { margin-top: 1.5rem; }
+            .sidebar-panel > .title { font-size: 1.4rem; margin-bottom: 1.2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+
+            .recent-news ul li { display: flex; align-items: flex-start; margin-bottom: 1.2rem; line-height: 1.6; }
+            .recent-news ul li i { margin-top: 0.1rem; flex-shrink: 0; width: 1.2rem; margin-right: 0.5rem; }
+            .recent-news ul li .news-content { flex: 1; min-width: 0; word-wrap: break-word; overflow-wrap: break-word; }
+
+            .text-primary { color: var(--secondary-color) !important; }
+            .text-success { color: var(--accent-color) !important; }
+            .text-warning { color: #f39c12 !important; }
+            .text-danger { color: #e74c3c !important; }
+            .text-info { color: #3498db !important; }
+
+            .section-content { padding: 2rem 0; border-bottom: 1px solid var(--border-color); animation: fadeIn 0.3s ease; }
+            .section-content:last-of-type { border-bottom: none; }
+            .section-content h2.title { color: var(--secondary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+            .section-content h3 { color: var(--text-color); margin-top: 1.5rem; margin-bottom: 1rem; }
+
+            .topic-paper-list { margin-top: 1rem; border-top: 1px solid rgba(44, 62, 80, 0.14); }
+            .topic-paper-list h4 { margin: 0.75rem 0 0.2rem; color: #59636e; font-size: 0.78rem; font-weight: 600; letter-spacing: 0; text-transform: uppercase; }
+            .topic-paper { padding: 0.6rem 0; border-bottom: 1px solid rgba(44, 62, 80, 0.1); }
+            .topic-paper:last-child { border-bottom: 0; padding-bottom: 0; }
+            .topic-paper-title { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+            .topic-paper-authors, .topic-paper-venue { margin-bottom: 0.1rem !important; font-size: 0.86rem; line-height: 1.4; }
+            .topic-paper-venue { color: #59636e; }
+            .topic-paper .tag { margin-left: 0.35rem; vertical-align: 0.1rem; }
+
+            @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+            .section-nav { position: sticky; top: 0; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); margin-bottom: 2rem; z-index: 100; padding: 0.5rem 0; }
+            .nav-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 0.5rem; }
+            .nav-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; border-radius: 6px; text-decoration: none; color: var(--text-color); font-weight: 500; transition: all 0.3s ease; border: 1px solid transparent; }
+            .nav-item:hover { background-color: var(--light-bg); color: var(--secondary-color); transform: translateY(-1px); border-color: var(--border-color); border-bottom: 1px solid transparent; }
+            .nav-item.active { background-color: var(--secondary-color); color: white; border-color: var(--secondary-color); border-bottom: 1px solid var(--secondary-color); }
+            .nav-item i { font-size: 0.9rem; }
+            .nav-item span { font-size: 0.95rem; }
+
+            html { scroll-behavior: smooth; }
+            section[id] { scroll-margin-top: 80px; }
+
+            .topic-entry-left { border-left: 4px solid #48c774; border-radius: 0 8px 8px 0; background: linear-gradient(135deg, #f9fafb 0%, #f0f8f0 100%); margin-left: 0; margin-right: 2rem; }
+            .topic-entry-right { border-right: 4px solid #3273dc; border-radius: 8px 0 0 8px; background: linear-gradient(225deg, #f9fafb 0%, #f0f6ff 100%); margin-right: 0; margin-left: 2rem; }
+            .topic-entry-alt { border-left: 4px solid #f39c12; border-radius: 0 8px 8px 0; background: linear-gradient(135deg, #f9fafb 0%, #fff8f0 100%); margin-left: 0; margin-right: 2rem; }
+
+            .short-underline { position: relative; border-bottom: none !important; }
+            .short-underline::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60%; height: 2px; background-color: var(--secondary-color); }
+
+            .exp-entry { border-left: 4px solid var(--secondary-color); background: #f9fafb; padding: 1.2rem 1.5rem; border-radius: 0 8px 8px 0; margin-bottom: 1.2rem; }
+            .exp-entry:last-child { margin-bottom: 0; }
+
+            @media screen and (max-width: 768px) {
+                .section { padding: 2rem 1rem; }
+                .nav-container { gap: 0.25rem; }
+                .nav-item { padding: 0.6rem 0.8rem; font-size: 0.85rem; }
+                .nav-item span { display: none; }
+                .nav-item i { font-size: 1rem; margin: 0; }
+                section[id] { scroll-margin-top: 70px; }
+                .section-nav { padding: 0.4rem 0; }
+                .title.is-2 { font-size: 1.8rem; margin-top: 1rem; }
+                .buttons { justify-content: center; flex-wrap: wrap; }
+                .button { margin-bottom: 0.5rem; }
+                .recent-news { margin-top: 2rem; }
+                .profile-image-container { width: 150px; height: 150px; margin-bottom: 1.5rem; }
+                .topic-entry-left, .topic-entry-right, .topic-entry-alt { margin-left: 0 !important; margin-right: 0 !important; border-radius: 8px !important; border-left: 4px solid !important; border-right: none !important; }
+                .topic-entry-left { border-left-color: #48c774 !important; }
+                .topic-entry-right { border-left-color: #3273dc !important; }
+                .topic-entry-alt { border-left-color: #f39c12 !important; }
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                document.querySelectorAll(".copyable-email").forEach((emailText) => {
+                    const copyStatus = emailText.nextElementSibling;
+                    emailText.addEventListener("click", () => {
+                        navigator.clipboard.writeText(emailText.textContent.trim()).then(() => {
+                            if (copyStatus && copyStatus.classList.contains("copy-status")) {
+                                copyStatus.classList.remove("is-hidden");
+                                setTimeout(() => { copyStatus.classList.add("is-hidden"); }, 2000);
+                            }
+                        }).catch((err) => { console.error("Failed to copy text: ", err); });
+                    });
+                });
+
+                const navItems = document.querySelectorAll('.nav-item');
+                const sections = document.querySelectorAll('section[id]');
+
+                navItems.forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = item.getAttribute('href').substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                        navItems.forEach(nav => nav.classList.remove('active'));
+                        item.classList.add('active');
+                    });
+                });
+
+                function updateActiveNav() {
+                    let currentSection = '';
+                    const scrollPosition = window.scrollY + 100;
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                            currentSection = section.getAttribute('id');
+                        }
+                    });
+                    navItems.forEach(item => {
+                        const href = item.getAttribute('href').substring(1);
+                        if (href === currentSection) { item.classList.add('active'); }
+                        else { item.classList.remove('active'); }
+                    });
+                }
+
+                window.addEventListener('scroll', updateActiveNav);
+                updateActiveNav();
+            });
+        </script>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container is-widescreen">
+                <div class="columns is-centered">
+                    <div class="column is-10 is-12-desktop is-10-widescreen">
+                        <div class="columns is-vcentered">
+                            <div class="column is-3">
+                                <div class="profile-image-container">
+                                    <img class="profile-image" src="assets/images/profile.jpg" alt="Md Rayhanul Islam" />
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <h1 class="title is-2 has-text-centered-mobile mb-2">
+                                    Md Rayhanul Islam
+                                </h1>
+                                <p class="subtitle has-text-centered-mobile is-6 is-size-7-mobile mt-2">
+                                    <em>PhD Student</em> in Computer Science &amp; Engineering at the University of Connecticut.
+                                </p>
+
+                                <div class="content contact-info mb-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        <span class="copyable-email">md_rayhanul.islam@uconn.edu</span>
+                                        <span class="copy-status is-hidden">Copied!</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        <span class="copyable-email">r97yhan@gmail.com</span>
+                                        <span class="copy-status is-hidden">Copied!</span>
+                                    </div>
+                                    <div class="mb-2">
+                                        <i class="fas fa-building mr-2"></i>
+                                        <span>School of Computing, University of Connecticut, Storrs, CT</span>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <a href="documents/Resume/Rayhanul_resume.pdf" class="button is-primary is-light" target="_blank" rel="noopener noreferrer">
+                                        <i class="far fa-file-alt mr-1"></i> CV
+                                    </a>
+                                    <a href="https://github.com/rayhanul" class="button is-dark is-light" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github mr-1"></i> GitHub
+                                    </a>
+                                    <a href="mailto:md_rayhanul.islam@uconn.edu" class="button is-link is-light" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-paper-plane mr-1"></i> Email
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-desktop">
+                            <div class="column is-8-desktop">
+                                <nav class="section-nav" id="section-nav">
+                                    <div class="nav-container">
+                                        <a href="#about" class="nav-item active">
+                                            <i class="fas fa-user"></i><span>About</span>
+                                        </a>
+                                        <a href="#education" class="nav-item">
+                                            <i class="fas fa-graduation-cap"></i><span>Education</span>
+                                        </a>
+                                        <a href="#research" class="nav-item">
+                                            <i class="fas fa-flask"></i><span>Research</span>
+                                        </a>
+                                        <a href="#publications" class="nav-item">
+                                            <i class="fas fa-book"></i><span>Publications</span>
+                                        </a>
+                                        <a href="#experience" class="nav-item">
+                                            <i class="fas fa-briefcase"></i><span>Experience</span>
+                                        </a>
+                                        <a href="#teaching" class="nav-item">
+                                            <i class="fas fa-chalkboard-teacher"></i><span>Teaching</span>
+                                        </a>
+                                        <a href="#awards" class="nav-item">
+                                            <i class="fas fa-award"></i><span>Awards</span>
+                                        </a>
+                                        <a href="#projects" class="nav-item">
+                                            <i class="fas fa-diagram-project"></i><span>Projects</span>
+                                        </a>
+                                    </div>
+                                </nav>
+
+                                <div class="content mt-5">
+                                    <!-- About -->
+                                    <section id="about" class="section-content">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-user mr-2"></i>About</h2>
+                                        <p>
+                                            I am a PhD student in Computer Science &amp; Engineering at the
+                                            <a href="https://www.uconn.edu/" target="_blank" rel="noopener noreferrer">University of Connecticut</a> (UConn), advised by
+                                            <a href="https://cps.cse.uconn.edu/" target="_blank" rel="noopener noreferrer">Dr. Song Han</a>. My research focuses on
+                                            <strong>Time-Sensitive Networking (TSN)</strong>, runtime network reconfiguration, and deterministic
+                                            communication for secure edge-AI systems.
+                                        </p>
+                                        <!--
+                                        <p>
+                                            I maintain a 4.0 cumulative GPA and passed my PhD
+                                            qualifying examination in 2026.
+                                        </p>
+                                        <p>
+                                            One line of my work studies online TSN reconfiguration &mdash; adding or removing flows without
+                                            recomputing the entire Gate Control List (GCL) schedule &mdash; so networks stay responsive to
+                                            changing traffic while preserving the timing guarantees of existing time-critical flows. Looking
+                                            ahead, I am exploring agentic, reinforcement-learning-driven reconfiguration, where a controller
+                                            learns from traffic patterns and workloads to make timely decisions within defined safety and
+                                            timing constraints.
+                                        </p>
+                                        <p>
+                                            A second line of my work builds a real-world TSN testbed for deterministic, secure multi-camera
+                                            communication: TSN switches paired with camera-equipped edge nodes running YOLO-based object
+                                            detection, transmitting only the relevant detected objects instead of full video streams and
+                                            selectively encrypting sensitive regions (faces, license plates) according to their sensitivity level.
+                                        </p>
+                                        <p>
+                                            Before UConn, I earned my MS in Computer Science at
+                                            <a href="https://www.cs.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a> (Spring 2024), advised
+                                            by <a href="https://tichakorn.dev/" target="_blank" rel="noopener noreferrer">Dr. Tichakorn (Nok) Wongpiromsarn</a>, where I
+                                            worked on quantifying safety for interacting autonomous vehicles under partial observability
+                                            &mdash; published at <a href="documents/conferences/ieeeconf_paper_ITSC_2024.pdf" target="_blank" rel="noopener noreferrer">IEEE ITSC 2024</a>.
+                                            I hold MS and BS degrees in Software Engineering from the
+                                            <a href="http://www.du.ac.bd/" target="_blank" rel="noopener noreferrer">University of Dhaka</a>, Bangladesh, where I later
+                                            taught as a full-time lecturer before returning to graduate school. In Summer 2025, I was a research
+                                            intern at the University of Central Florida, contributing to a hardware fuzzer for exposing
+                                            micro-architectural side-channel vulnerabilities.
+                                        </p>
+                                        <p>
+                                            <strong>Currently:</strong> Seeking internships and full-time opportunities in deterministic /
+                                            time-sensitive networking, network scheduling, and edge systems.
+                                        </p>
+                                        -->
+                                    </section>
+
+                                    <!-- Education -->
+                                    <section id="education" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-graduation-cap mr-2"></i>Education</h2>
+
+                                        <div class="box" style="border-left: 4px solid #1a5490; background: #f4f8fc; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Ph.D. in Computer Science &amp; Engineering</strong>
+                                                <span class="is-size-7 has-text-grey">Fall 2024 &ndash; Present</span>
+                                            </div>
+                                            <p class="is-size-6 mb-1">University of Connecticut, Storrs, CT</p>
+                                            <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Song Han &middot; CGPA: 4.0/4.0</p>
+                                        </div>
+
+                                        <div class="box" style="border-left: 4px solid #2d6a4f; background: #f4faf6; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>M.S. in Computer Science</strong>
+                                                <span class="is-size-7 has-text-grey">Spring 2024</span>
+                                            </div>
+                                            <p class="is-size-6 mb-1">Iowa State University, Ames, IA</p>
+                                            <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Tichakorn (Nok) Wongpiromsarn &middot; CGPA: 3.82/4.0</p>
+                                        </div>
+
+                                        <div class="box" style="border-left: 4px solid #881c1c; background: #fdf6f6; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>M.S. in Software Engineering</strong>
+                                            </div>
+                                            <p class="is-size-6 mb-1">University of Dhaka, Dhaka, Bangladesh</p>
+                                            <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Kazi Muheymin-Us-Sakib &middot; CGPA: 3.96/4.0</p>
+                                        </div>
+
+                                        <div class="box" style="border-left: 4px solid #b8860b; background: #fdf9ee; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>B.S. in Software Engineering</strong>
+                                            </div>
+                                            <p class="is-size-6 mb-1">University of Dhaka, Dhaka, Bangladesh</p>
+                                            <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Kazi Muheymin-Us-Sakib &middot; CGPA: 3.86/4.0</p>
+                                        </div>
+                                    </section>
+
+                                    <!-- Research -->
+                                    <section id="research" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-flask mr-2"></i>Research</h2>
+
+                                        <div class="content">
+                                            <div class="mb-5 topic-entry-left">
+                                                <div class="box" style="background: transparent; box-shadow: none; border: none; padding: 1.5rem;">
+                                                    <h3 class="title is-5 mb-3 short-underline" style="padding-bottom: 0.5rem;">
+                                                        <i class="fas fa-network-wired mr-2 text-success"></i>Time-Sensitive Networking &amp; Deterministic Systems
+                                                    </h3>
+                                                    <p>
+                                                        My doctoral research, advised by Dr. Song Han, focuses on making TSN networks more
+                                                        reliable, adaptable, and practical for real-world deployment. I study runtime
+                                                        reconfiguration of Gate Control List schedules so flows can be added or removed without
+                                                        a full schedule recompute. Ongoing work explores agentic, reinforcement-learning-based
+                                                        network reconfiguration under safety and timing constraints.
+                                                    </p>
+                                                    <p class="is-size-7 has-text-grey">Manuscripts in preparation.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-5 topic-entry-right">
+                                                <div class="box" style="background: transparent; box-shadow: none; border: none; padding: 1.5rem;">
+                                                    <h3 class="title is-5 mb-3 short-underline" style="padding-bottom: 0.5rem;">
+                                                        <i class="fas fa-shield-halved mr-2 text-info"></i>Formal Verification &amp; Autonomous Systems Safety
+                                                    </h3>
+                                                    <p>
+                                                        My MS research at Iowa State, advised by Dr. Tichakorn (Nok) Wongpiromsarn, quantified
+                                                        safety for heterogeneous, interacting agents under partial observability, applied to
+                                                        autonomous vehicles simulated in CARLA.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- Publications -->
+                                    <section id="publications" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-book mr-2"></i>Publications</h2>
+                                        <div class="topic-paper-list" style="border-top: 1px solid var(--border-color);">
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="documents/conferences/ieeeconf_paper_ITSC_2024.pdf" target="_blank" rel="noopener noreferrer">Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments</a>
+                                                <p class="topic-paper-authors">Md Rayhanul Islam, Tichakorn Wongpiromsarn, and Samik Basu.</p>
+                                                <p class="topic-paper-venue">IEEE ITSC'24</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="https://dr.lib.iastate.edu/handle/20.500.12876/dvmq9ZRv" target="_blank" rel="noopener noreferrer">Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles</a>
+                                                <p class="topic-paper-authors">Md Rayhanul Islam.</p>
+                                                <p class="topic-paper-venue">MS Thesis, Iowa State University, 2024</p>
+                                            </article>
+                                        </div>
+                                    </section>
+
+                                    <!-- Experience -->
+                                    <section id="experience" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-briefcase mr-2"></i>Experience</h2>
+
+                                        <div class="exp-entry">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Graduate Research Assistant</strong>
+                                                <span class="is-size-7 has-text-grey">Fall 2024 &ndash; Present</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">University of Connecticut, Storrs, CT &middot; NSF Project: Accurate and Private Multi-Camera Surveillance System on Time-Sensitive Networks</p>
+                                            <ul>
+                                                <li>Design and evaluate TSN scheduling and runtime reconfiguration for deterministic, low-jitter communication across a privacy-aware multi-camera edge-intelligence system.</li>
+                                                <li>Built a TSN edge-AI testbed (TSN switch + Raspberry Pi 4 nodes) integrating YOLO-based object detection, sensitivity-aware encryption, and 802.1Qbv-scheduled deterministic networking.</li>
+                                                <li>Investigating runtime TSN reconfiguration that adapts Gate Control List schedules to changing camera workloads without a full schedule recompute.</li>
+                                                <li>Teaching Assistant, Artificial Intelligence (Spring 2026).</li>
+                                            </ul>
+                                        </div>
+
+                                        <!--
+                                        <div class="exp-entry">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Research Intern</strong>
+                                                <span class="is-size-7 has-text-grey">Summer 2025</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">University of Central Florida, Orlando, FL &middot; Hardware Security</p>
+                                            <ul>
+                                                <li>Contributed to a hardware fuzzer designed to expose micro-architectural side-channel vulnerabilities.</li>
+                                            </ul>
+                                        </div>
+                                        -->
+
+                                        <div class="exp-entry">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Graduate Research &amp; Teaching Assistant</strong>
+                                                <span class="is-size-7 has-text-grey">Fall 2021 &ndash; Spring 2024</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">Iowa State University, Ames, IA &middot; Autonomous Systems Lab &middot; NSF Project: Sharing the World with Autonomous Systems</p>
+                                            <ul>
+                                                <li>Developed a formal-verification framework analyzing perception and decision-making inconsistencies among interacting autonomous vehicles under partial observability; results published at IEEE ITSC 2024.</li>
+                                                <li>Taught/assisted: Object-Oriented Programming, Principles of Programming Languages, Principles of Artificial Intelligence, and CS Senior Design.</li>
+                                            </ul>
+                                        </div>
+
+                                        <!--
+                                        <div class="exp-entry">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Lecturer</strong>
+                                                <span class="is-size-7 has-text-grey">Sep 2017 &ndash; Aug 2021</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">Institute of Leather Engineering &amp; Technology, University of Dhaka, Dhaka, Bangladesh</p>
+                                        </div>
+
+                                        <div class="exp-entry">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Software Engineer</strong>
+                                                <span class="is-size-7 has-text-grey">May 2015 &ndash; Sep 2017</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">Kaz Software Ltd., Dhaka, Bangladesh</p>
+                                            <ul>
+                                                <li>Built back-end and front-end features for multiple products using C#, Java, ASP.NET, JavaScript, and AngularJS.</li>
+                                            </ul>
+                                        </div>
+                                        -->
+                                    </section>
+
+                                    <!-- Teaching -->
+                                    <section id="teaching" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-chalkboard-teacher mr-2"></i>Teaching</h2>
+
+                                        <div class="box" style="border-left: 4px solid #1a5490; background: #f4f8fc; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <span><strong>University of Connecticut</strong> &middot; Teaching Assistant</span>
+                                                <span class="is-size-7 has-text-grey">SP'26</span>
+                                            </div>
+                                            <p class="is-size-6 mb-2">Artificial Intelligence.</p>
+                                        </div>
+
+                                        <div class="box" style="border-left: 4px solid #2d6a4f; background: #f4faf6; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <span><strong>Iowa State University</strong> &middot; Teaching Assistant</span>
+                                                <span class="is-size-7 has-text-grey">FA'21 &ndash; SP'24</span>
+                                            </div>
+                                            <p class="is-size-6 mb-2">
+                                                COM S 227 (Object-Oriented Programming), COM S 342 (Principles of Programming Languages),
+                                                COM S 472/572 (Artificial Intelligence), COM S 402C (CS Senior Design).
+                                            </p>
+                                        </div>
+                                    </section>
+
+                                    <!-- Awards -->
+                                    <section id="awards" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-award mr-2"></i>Awards &amp; Fellowships</h2>
+
+                                        <div class="box" style="border-left: 4px solid #b8860b; background: #fdf9ee; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <span><strong>Pratt &amp; Whitney Institute for Advanced Systems Engineering (PW-IASE) Graduate Fellowship</strong></span>
+                                                <span class="is-size-7 has-text-grey">2026 &ndash; 2027</span>
+                                            </div>
+                                            <p class="is-size-6 mb-2">University of Connecticut.</p>
+                                        </div>
+
+                                        <div class="box" style="border-left: 4px solid #b8860b; background: #fdf9ee; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <span><strong>UConn Computer Science Predoctoral Fellowship</strong></span>
+                                                <span class="is-size-7 has-text-grey">2026</span>
+                                            </div>
+                                            <p class="is-size-6 mb-2">School of Computing, University of Connecticut.</p>
+                                        </div>
+                                    </section>
+
+                                    <!-- Projects -->
+                                    <section id="projects" class="section-content mt-6">
+                                        <h2 class="title is-4 mb-4"><i class="fas fa-diagram-project mr-2"></i>Selected Projects</h2>
+
+                                        <div class="box" style="border-left: 4px solid var(--accent-color); background: #f4faf6; box-shadow: none; margin-bottom: 1.5rem;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>Accurate and Private Multi-Camera Surveillance System on Time-Sensitive Networks</strong>
+                                                <span class="tag is-success is-light">NSF-Funded Research Project</span>
+                                            </div>
+                                            <p class="is-size-7 has-text-grey mb-2">PhD Research, University of Connecticut &middot; Fall 2025 &ndash; Present</p>
+                                            <p class="is-size-6 mb-0">Designing and evaluating TSN scheduling and runtime reconfiguration for deterministic, low-jitter communication across a privacy-aware multi-camera edge-intelligence system; built a TSN edge-AI testbed (TSN switch + Raspberry Pi 4 nodes).</p>
+                                        </div>
+
+                                        <!--
+                                        <div class="topic-paper-list" style="border-top: 1px solid var(--border-color);">
+                                            <h4>Course Projects</h4>
+                                            <article class="topic-paper">
+                                                <span class="topic-paper-title">Joint Compute&ndash;Network Scheduling via SMT</span>
+                                                <p class="topic-paper-venue">CSE 5312: Architecture of IoT &middot; Fall 2025</p>
+                                                <p>Formulated joint synchronization of computing and networking resources as an SMT problem to co-schedule gate control lists with compute deadlines; validated on a hardware testbed (TSN switch + Raspberry Pi 4 nodes).</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="documents/project_report/CSE_5302__Computer_Architecture_report.pdf" target="_blank" rel="noopener noreferrer">RISC-V Simulator: Dynamic Branch Prediction &amp; Data Cache</a>
+                                                <span class="tag is-light">PDF</span>
+                                                <p class="topic-paper-venue">CSE 5302: Computer Architecture &middot; Fall 2024</p>
+                                                <p>Implemented three dynamic branch predictors (static, 1-level, 2-level) and three cache organizations (direct-mapped, 2-way, 4-way set associative) on a RISC-V simulator, comparing misprediction and hit-rate performance.</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <span class="topic-paper-title">Custom Query Answering with RAG and Pre-Trained Models</span>
+                                                <a href="https://github.com/rayhanul/COMS-579" target="_blank" rel="noopener noreferrer" class="tag is-light">Code</a>
+                                                <a href="https://rayhan0201-chatarticle.hf.space" target="_blank" rel="noopener noreferrer" class="tag is-light">Live Demo</a>
+                                                <p class="topic-paper-venue">COM S 579: Natural Language Processing &middot; Spring 2024</p>
+                                                <p>A retrieval-augmented generation platform that indexes uploaded PDFs and answers user questions grounded in the uploaded documents.</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <span class="topic-paper-title">AWS DeepRacer &mdash; Deep Reinforcement Learning</span>
+                                                <p class="topic-paper-venue">CSE 5802: Machine Learning (Reinforcement Learning) &middot; Spring 2025</p>
+                                                <p>Trained a deep RL policy on the AWS DeepRacer platform for the AWS DeepRacer competition.</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="documents/project_report/COMS676X_Final_project.pdf" target="_blank" rel="noopener noreferrer">Policy Evaluation on Uncertain (MDP) Environments</a>
+                                                <span class="tag is-light">PDF</span>
+                                                <a href="https://github.com/rayhanul/COMS676_project" target="_blank" rel="noopener noreferrer" class="tag is-light">Code</a>
+                                                <p class="topic-paper-venue">COM S 676X: Advanced Topics in Autonomous Systems and Robotics &middot; Fall 2023</p>
+                                                <p>Evaluates whether an initial policy satisfies a safety property across a parameter space using formal verification, and suggests a new policy when the initial one fails.</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="documents/project_report/COMS576_project_final_report.pdf" target="_blank" rel="noopener noreferrer">Optimum Motion Planning using PRM* and RRT*</a>
+                                                <span class="tag is-light">PDF</span>
+                                                <a href="https://github.com/rayhanul/COMS576_Project" target="_blank" rel="noopener noreferrer" class="tag is-light">Code</a>
+                                                <p class="topic-paper-venue">COM S 576: Motion Planning for Robotics and Autonomous Systems &middot; Spring 2023</p>
+                                                <p>Implements sampling-based motion planning algorithms, compares results, and discusses possible improvements.</p>
+                                            </article>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="documents/project_report/513_Project_Report.pdf" target="_blank" rel="noopener noreferrer">Vulnerability Detection using Program Slicing and Transformer-based Models</a>
+                                                <span class="tag is-light">PDF</span>
+                                                <p class="topic-paper-venue">COM S 513: Program Analysis &middot; Fall 2022</p>
+                                                <p>Combines program slicing with transformer-based models to improve vulnerability detection while preserving vulnerable program segments.</p>
+                                            </article>
+                                        </div>
+                                        -->
+                                    </section>
+                                </div>
+                            </div>
+
+                            <div class="column is-4-desktop">
+                                <div class="recent-news sidebar-panel">
+                                    <h2 class="title is-4">Recent News</h2>
+                                    <div class="content">
+                                        <ul id="news-feed">
+                                            <li>
+                                                <i class="fas fa-award text-warning"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2026-07"><strong>July 2026</strong></time>
+                                                    Awarded the <strong>PW-IASE Graduate Fellowship</strong> at UConn for 2026&ndash;2027, supporting research on runtime TSN reconfiguration and secure multi-camera communication.
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-award text-warning"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2026-05"><strong>May 2026</strong></time>
+                                                    Awarded the <strong>UConn Computer Science Predoctoral Fellowship</strong>.
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-graduation-cap text-primary"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2026-03"><strong>Spring 2026</strong></time>
+                                                    Passed my PhD qualifying examination at UConn.
+                                                </div>
+                                            </li>
+                                            <!--
+                                            <li>
+                                                <i class="fas fa-briefcase text-primary"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2025-06"><strong>Summer 2025</strong></time>
+                                                    Research internship at the University of Central Florida on hardware fuzzing for micro-architectural side channels.
+                                                </div>
+                                            </li>
+                                            -->
+                                            <li>
+                                                <i class="fas fa-file-alt text-primary"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2024-07-10"><strong>Jul 10, 2024</strong></time>
+                                                    Paper accepted at <strong>IEEE ITSC 2024</strong>: Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments.
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-university text-primary"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2024-08"><strong>Fall 2024</strong></time>
+                                                    Started my PhD in Computer Science &amp; Engineering at the University of Connecticut.
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-graduation-cap text-primary"></i>
+                                                <div class="news-content">
+                                                    <time datetime="2024-02-26"><strong>Feb 26, 2024</strong></time>
+                                                    Successfully defended my MS thesis, <em>Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles</em>, at Iowa State University.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Md Rayhanul Islam &bull; <i>Updated Sep&#39;26</i>.</p>
+            </div>
+        </footer>
+    </body>
+</html>
