@@ -6,6 +6,6 @@ Artificial Intelligence.
 date: FA'21 – SP'24
 COM S 227 (Object-Oriented Programming), COM S 342 (Principles of Programming Languages), COM S 472/572 (Artificial Intelligence), COM S 402C (CS Senior Design).
 
-## University of Dhaka
+## University of Dhaka . Instructor
 date: Sep 2017 - Aug 2021
 Fundamental of Computer, and Computer graphics using photoshop.
