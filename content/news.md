@@ -3,7 +3,7 @@ date: 2026-07
 icon: award
 color: warning
 
-Awarded the **PW-IASE Graduate Fellowship** at UConn for 2026–2027, supporting research on runtime TSN reconfiguration and secure multi-camera communication.
+Awarded the **PW-IASE Graduate Fellowship** at UConn for 2026–2027, supporting research on runtime TSN reconfiguration.
 
 ## May 2026
 date: 2026-05
