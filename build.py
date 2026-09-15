@@ -25,6 +25,8 @@ Recognized meta keys (all optional):
     side    - "left" or "right" (research section only; auto-alternates if omitted)
     category - group heading shown above entries with this value, in the order
                entries appear (publications section only; omit to leave flat)
+    logo    - path to a small institution logo shown beside the entry
+              (education section only; omit for no logo)
 
 Wrap any entry (or anything else) in <!-- ... --> to keep it in the source
 without publishing it — the same convention already used in index.html.
@@ -137,7 +139,7 @@ def parse_entries(text):
         meta_lines = []
         while i < len(rest) and rest[i].strip() != "":
             line = rest[i].strip()
-            mm = re.match(r"^(date|icon|color|accent|tag|side|category):\s*(.+)$", line)
+            mm = re.match(r"^(date|icon|color|accent|tag|side|category|logo):\s*(.+)$", line)
             if mm:
                 meta[mm.group(1)] = mm.group(2)
             else:
@@ -185,12 +187,23 @@ def render_box_section(entries, default_accent=None):
         for i, line in enumerate(e["meta_lines"]):
             cls = "is-size-6 mb-1" if i == 0 else "is-size-7 has-text-grey mb-0"
             meta_html += f'                                            <p class="{cls}">{inline_md(line)}</p>\n'
-        parts.append(f'''                                        <div class="box" style="border-left: 4px solid {accent}; background: {bg}; box-shadow: none;">
-                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+        header_and_meta = f'''<div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
                                                 <strong>{title_html}</strong>
                                                 {date_html}
                                             </div>
-{meta_html}                                        </div>''')
+{meta_html}'''
+        logo = e["meta"].get("logo")
+        if logo:
+            inner = f'''<div class="is-flex" style="gap: 0.85rem; align-items: flex-start;">
+                                                <img class="edu-logo" src="{escape(logo)}" alt="" />
+                                                <div style="flex: 1; min-width: 0;">
+                                                    {header_and_meta}                                                </div>
+                                            </div>'''
+        else:
+            inner = header_and_meta
+        parts.append(f'''                                        <div class="box" style="border-left: 4px solid {accent}; background: {bg}; box-shadow: none;">
+                                            {inner}
+                                        </div>''')
     return "\n\n".join(parts)
 
 

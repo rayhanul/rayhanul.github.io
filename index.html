@@ -157,6 +157,9 @@
             .section-content .box:not(:last-child) { margin-bottom: 0.75rem; }
             .section-content .box { padding: 1rem 1.25rem; }
 
+            .edu-logo { width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; border-radius: 4px; background: #ffffff; padding: 3px; box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.06); filter: grayscale(55%) opacity(0.92); transition: filter 0.25s ease; }
+            .box:hover .edu-logo { filter: grayscale(0%) opacity(1); }
+
             .topic-paper-list { margin-top: 0.5rem; border-top: 1px solid rgba(44, 62, 80, 0.14); }
             .topic-paper-list h4 { margin: 0.5rem 0 0.2rem; color: #59636e; font-size: 0.78rem; font-weight: 600; letter-spacing: 0; text-transform: uppercase; }
             .topic-paper { padding: 0.45rem 0; border-bottom: 1px solid rgba(44, 62, 80, 0.1); }
@@ -382,39 +385,59 @@
                                         <h2 class="title is-4 mb-3"><i class="fas fa-graduation-cap mr-2"></i>Education</h2>
 
                                         <div class="box" style="border-left: 4px solid #1a5490; background: #f1f5f8; box-shadow: none;">
-                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                            <div class="is-flex" style="gap: 0.85rem; align-items: flex-start;">
+                                                <img class="edu-logo" src="assets/logo/UCONN_academic_logo.png" alt="" />
+                                                <div style="flex: 1; min-width: 0;">
+                                                    <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
                                                 <strong>Ph.D. in Computer Science &amp; Engineering</strong>
                                                 <span class="is-size-7 has-text-grey">Fall 2024 – Present</span>
                                             </div>
                                             <p class="is-size-6 mb-1">University of Connecticut, Storrs, CT</p>
                                             <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Song Han · CGPA: 4.0/4.0</p>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #2d6a4f; background: #f2f6f4; box-shadow: none;">
-                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                            <div class="is-flex" style="gap: 0.85rem; align-items: flex-start;">
+                                                <img class="edu-logo" src="assets/logo/iowa-state-logo.png" alt="" />
+                                                <div style="flex: 1; min-width: 0;">
+                                                    <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
                                                 <strong>M.S. in Computer Science</strong>
                                                 <span class="is-size-7 has-text-grey">Spring 2024</span>
                                             </div>
                                             <p class="is-size-6 mb-1">Iowa State University, Ames, IA</p>
                                             <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Tichakorn (Nok) Wongpiromsarn · CGPA: 3.82/4.0</p>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #881c1c; background: #f8f1f1; box-shadow: none;">
-                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                            <div class="is-flex" style="gap: 0.85rem; align-items: flex-start;">
+                                                <img class="edu-logo" src="assets/logo/Dhaka_University_logo.svg.webp" alt="" />
+                                                <div style="flex: 1; min-width: 0;">
+                                                    <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
                                                 <strong>M.S. in Software Engineering</strong>
                                                 
                                             </div>
                                             <p class="is-size-6 mb-1">University of Dhaka, Dhaka, Bangladesh</p>
                                             <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Kazi Muheymin-Us-Sakib · CGPA: 3.96/4.0</p>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #b8860b; background: #fbf8f0; box-shadow: none;">
-                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                            <div class="is-flex" style="gap: 0.85rem; align-items: flex-start;">
+                                                <img class="edu-logo" src="assets/logo/Dhaka_University_logo.svg.webp" alt="" />
+                                                <div style="flex: 1; min-width: 0;">
+                                                    <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
                                                 <strong>B.S. in Software Engineering</strong>
                                                 
                                             </div>
                                             <p class="is-size-6 mb-1">University of Dhaka, Dhaka, Bangladesh</p>
                                             <p class="is-size-7 has-text-grey mb-0">Advisor: Dr. Kazi Muheymin-Us-Sakib · CGPA: 3.86/4.0</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </section>
 
@@ -510,6 +533,7 @@
                                                 <span class="is-size-7 has-text-grey">SP'26</span>
                                             </div>
                                             <p class="is-size-6 mb-1">Artificial Intelligence.</p>
+
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #2d6a4f; background: #f2f6f4; box-shadow: none;">
@@ -518,6 +542,7 @@
                                                 <span class="is-size-7 has-text-grey">FA'21 – SP'24</span>
                                             </div>
                                             <p class="is-size-6 mb-1">COM S 227 (Object-Oriented Programming), COM S 342 (Principles of Programming Languages), COM S 472/572 (Artificial Intelligence), COM S 402C (CS Senior Design).</p>
+
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #881c1c; background: #f8f1f1; box-shadow: none;">
@@ -526,6 +551,7 @@
                                                 <span class="is-size-7 has-text-grey">Sep 2017 - Aug 2021</span>
                                             </div>
                                             <p class="is-size-6 mb-1">Fundamental of Computer, and Computer graphics using photoshop.</p>
+
                                         </div>
                                     </section>
 
@@ -539,6 +565,7 @@
                                                 <span class="is-size-7 has-text-grey">2026 – 2027</span>
                                             </div>
                                             <p class="is-size-6 mb-1">University of Connecticut.</p>
+
                                         </div>
 
                                         <div class="box" style="border-left: 4px solid #b8860b; background: #fbf8f0; box-shadow: none;">
@@ -547,6 +574,7 @@
                                                 <span class="is-size-7 has-text-grey">2026</span>
                                             </div>
                                             <p class="is-size-6 mb-1">School of Computing, University of Connecticut.</p>
+
                                         </div>
                                     </section>
 
