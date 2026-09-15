@@ -30,7 +30,4 @@ I hold MS and BS degrees in Software Engineering from the
 taught as a full-time lecturer before returning to graduate school. In Summer 2025, I was a research
 intern at the University of Central Florida, contributing to a hardware fuzzer for exposing
 micro-architectural side-channel vulnerabilities.
-
-**Currently:** Seeking internships and full-time opportunities in deterministic /
-time-sensitive networking, network scheduling, and edge systems.
 -->

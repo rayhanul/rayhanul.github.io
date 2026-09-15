@@ -23,11 +23,15 @@ Recognized meta keys (all optional):
     color   - Bulma text-color suffix, e.g. success/info/warning/primary
     tag     - badge text shown top-right (projects section)
     side    - "left" or "right" (research section only; auto-alternates if omitted)
+    category - group heading shown above entries with this value, in the order
+               entries appear (publications section only; omit to leave flat)
 
 Wrap any entry (or anything else) in <!-- ... --> to keep it in the source
 without publishing it — the same convention already used in index.html.
 
-about.md is the exception: no "## " headings, just plain paragraphs.
+about.md and looking_for_work.md are the exception: no "## " headings, just plain
+paragraphs. looking_for_work.md renders as a small highlighted banner right after
+About, and is intentionally not linked from the sidebar nav.
 """
 import html
 import re
@@ -133,7 +137,7 @@ def parse_entries(text):
         meta_lines = []
         while i < len(rest) and rest[i].strip() != "":
             line = rest[i].strip()
-            mm = re.match(r"^(date|icon|color|accent|tag|side):\s*(.+)$", line)
+            mm = re.match(r"^(date|icon|color|accent|tag|side|category):\s*(.+)$", line)
             if mm:
                 meta[mm.group(1)] = mm.group(2)
             else:
@@ -152,6 +156,17 @@ def parse_entries(text):
 
 def render_about():
     text = strip_comments((CONTENT / "about.md").read_text())
+    return render_body(text.split("\n"))
+
+
+def render_looking_for_work():
+    text = strip_comments((CONTENT / "looking_for_work.md").read_text())
+    body = render_body(text.split("\n")).strip()
+    return re.sub(r"^<p>(.*)</p>$", r"\1", body, flags=re.DOTALL)
+
+
+def render_skills():
+    text = strip_comments((CONTENT / "skills.md").read_text())
     return render_body(text.split("\n"))
 
 
@@ -218,7 +233,12 @@ def render_research(entries):
 
 def render_publications(entries):
     parts = []
+    last_category = object()
     for e in entries:
+        category = e["meta"].get("category")
+        if category and category != last_category:
+            parts.append(f'                                            <h4>{escape(category)}</h4>')
+            last_category = category
         title_html = inline_md(e["title"])
         if e["url"]:
             title_html = f'<a class="topic-paper-title" href="{e["url"]}" target="_blank" rel="noopener noreferrer">{title_html}</a>'
@@ -285,6 +305,7 @@ def main():
 
     replacements = {
         "{{ABOUT}}": render_about(),
+        "{{LOOKING_FOR_WORK}}": render_looking_for_work(),
         "{{EDUCATION}}": render_box_section(parse_entries(load("education"))),
         "{{RESEARCH}}": render_research(parse_entries(load("research"))),
         "{{PUBLICATIONS}}": render_publications(parse_entries(load("publications"))),
@@ -292,6 +313,7 @@ def main():
         "{{TEACHING}}": render_box_section(parse_entries(load("teaching"))),
         "{{AWARDS}}": render_box_section(parse_entries(load("awards"))),
         "{{PROJECTS}}": render_projects(parse_entries(load("projects"))),
+        "{{SKILLS}}": render_skills(),
         "{{NEWS}}": render_news(parse_entries(load("news"))),
     }
 

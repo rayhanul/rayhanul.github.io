@@ -36,7 +36,8 @@
                     {"@type": "CollegeOrUniversity", "name": "University of Dhaka"}
                 ],
                 "sameAs": [
-                    "https://github.com/rayhanul"
+                    "https://github.com/rayhanul",
+                    "https://scholar.google.com/citations?user=pO82RB8AAAAJ&hl=en"
                 ],
                 "knowsAbout": [
                     "Time-Sensitive Networking",
@@ -194,6 +195,10 @@
             .exp-entry { border-left: 4px solid var(--secondary-color); background: #f9fafb; padding: 0.9rem 1.25rem; border-radius: 0 8px 8px 0; margin-bottom: 0.75rem; }
             .exp-entry:last-child { margin-bottom: 0; }
 
+            .looking-for-work-banner { display: flex; align-items: flex-start; gap: 0.6rem; background: #f4faf6; border: 1px solid rgba(72, 199, 116, 0.35); border-left: 4px solid var(--accent-color); border-radius: 6px; padding: 0.85rem 1.1rem; margin-bottom: 1rem; font-size: 0.98rem; }
+            .looking-for-work-banner i { color: var(--accent-color); margin-top: 0.25rem; flex-shrink: 0; }
+            .looking-for-work-banner p { margin-bottom: 0 !important; }
+
             @media screen and (max-width: 768px) {
                 .section { padding: 1.25rem 1rem; }
                 .nav-container { gap: 0.25rem; }
@@ -306,6 +311,9 @@
                                     <a href="documents/Resume/Rayhanul_resume.pdf" class="button is-primary is-light" target="_blank" rel="noopener noreferrer">
                                         <i class="far fa-file-alt mr-1"></i> CV
                                     </a>
+                                    <a href="https://scholar.google.com/citations?user=pO82RB8AAAAJ&amp;hl=en" class="button is-info is-light" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-google-scholar mr-1"></i> Scholar
+                                    </a>
                                     <a href="https://github.com/rayhanul" class="button is-dark is-light" target="_blank" rel="noopener noreferrer">
                                         <i class="fa-brands fa-github mr-1"></i> GitHub
                                     </a>
@@ -344,6 +352,11 @@
                                         <a href="#projects" class="nav-item">
                                             <i class="fas fa-diagram-project"></i><span>Projects</span>
                                         </a>
+                                        <!--
+                                        <a href="#skills" class="nav-item">
+                                            <i class="fas fa-toolbox"></i><span>Skills</span>
+                                        </a>
+                                        -->
                                     </div>
                                 </nav>
                             </div>
@@ -357,6 +370,12 @@
 <p>One line of my work studies online TSN reconfiguration — adding or removing flows without recomputing the entire Gate Control List (GCL) schedule — so networks stay responsive to changing traffic while preserving the timing guarantees of existing time-critical flows. Looking ahead, I am exploring agentic, reinforcement-learning-driven reconfiguration, where a controller learns from traffic patterns and workloads to make timely decisions within defined safety and timing constraints.</p>
 <p>Before UConn, I earned my MS in Computer Science at <a href="https://www.cs.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a> (Spring 2024), advised by <a href="https://tichakorn.dev/" target="_blank" rel="noopener noreferrer">Dr. Tichakorn (Nok) Wongpiromsarn</a>, where I worked on quantifying safety for interacting autonomous vehicles under partial observability — published at <a href="documents/conferences/ieeeconf_paper_ITSC_2024.pdf" target="_blank" rel="noopener noreferrer">IEEE ITSC 2024</a>. I hold MS and BS degrees in Software Engineering from the <a href="http://www.du.ac.bd/" target="_blank" rel="noopener noreferrer">University of Dhaka</a>, Bangladesh</p>
                                     </section>
+
+                                    <!-- Looking for Work (status banner, intentionally not in the sidebar nav) -->
+                                    <div class="looking-for-work-banner">
+                                        <i class="fas fa-circle-dot"></i>
+                                        <div><strong>Currently:</strong> Seeking internships in deterministic / time-sensitive networking, network scheduling, and edge systems.</div>
+                                    </div>
 
                                     <!-- Education -->
                                     <section id="education" class="section-content mt-4">
@@ -429,15 +448,23 @@
                                     <section id="publications" class="section-content mt-4">
                                         <h2 class="title is-4 mb-3"><i class="fas fa-book mr-2"></i>Publications</h2>
                                         <div class="topic-paper-list" style="border-top: 1px solid var(--border-color);">
+                                            <h4>Thesis</h4>
+                                            <article class="topic-paper">
+                                                <a class="topic-paper-title" href="https://dr.lib.iastate.edu/handle/20.500.12876/dvmq9ZRv" target="_blank" rel="noopener noreferrer">Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles</a>
+                                                <p class="topic-paper-authors">Md Rayhanul Islam.</p>
+                                                <p class="topic-paper-venue">MS Thesis, Iowa State University, 2024</p>
+                                            </article>
+                                            <h4>Conference Papers</h4>
                                             <article class="topic-paper">
                                                 <a class="topic-paper-title" href="documents/conferences/ieeeconf_paper_ITSC_2024.pdf" target="_blank" rel="noopener noreferrer">Analysis of the Effects of Perception Inconsistency Among Interacting Vehicles in Partially Observable Environments</a>
                                                 <p class="topic-paper-authors">Md Rayhanul Islam, Tichakorn Wongpiromsarn, and Samik Basu.</p>
                                                 <p class="topic-paper-venue">IEEE ITSC'24</p>
                                             </article>
+                                            <h4>Journal Papers</h4>
                                             <article class="topic-paper">
-                                                <a class="topic-paper-title" href="https://dr.lib.iastate.edu/handle/20.500.12876/dvmq9ZRv" target="_blank" rel="noopener noreferrer">Quantifying Safety in the Partially Observable Environment: Application to Autonomous Vehicles</a>
-                                                <p class="topic-paper-authors">Md Rayhanul Islam.</p>
-                                                <p class="topic-paper-venue">MS Thesis, Iowa State University, 2024</p>
+                                                <span class="topic-paper-title">ABMMRS Eradicator: Improving Accuracy in Recommending Move Methods for Web-based MVC Projects and Libraries Using Method's External Dependencies</span>
+                                                <p class="topic-paper-authors">Dipongkor, Atish Kumar, Iftekhar Ahmed, Rayhanul Islam, Nadia Nahar, Abdus Satter, and Md Saeed Siddik.</p>
+                                                <p class="topic-paper-venue">International Journal of Software Engineering and Knowledge Engineering 30, no. 09 (2020): 1289-1307.</p>
                                             </article>
                                         </div>
                                     </section>
@@ -492,6 +519,14 @@
                                             </div>
                                             <p class="is-size-6 mb-1">COM S 227 (Object-Oriented Programming), COM S 342 (Principles of Programming Languages), COM S 472/572 (Artificial Intelligence), COM S 402C (CS Senior Design).</p>
                                         </div>
+
+                                        <div class="box" style="border-left: 4px solid #881c1c; background: #f8f1f1; box-shadow: none;">
+                                            <div class="is-flex is-justify-content-space-between is-align-items-baseline mb-2" style="flex-wrap: wrap; gap: 0.5rem;">
+                                                <strong>University of Dhaka . Instructor</strong>
+                                                <span class="is-size-7 has-text-grey">Sep 2017 - Aug 2021</span>
+                                            </div>
+                                            <p class="is-size-6 mb-1">Fundamental of Computer, and Computer graphics using photoshop.</p>
+                                        </div>
                                     </section>
 
                                     <!-- Awards -->
@@ -528,6 +563,23 @@
                                             <p class="is-size-6 mb-0">Designing and evaluating TSN scheduling and runtime reconfiguration for deterministic, low-jitter communication across a privacy-aware multi-camera edge-intelligence system; built a TSN edge-AI testbed (TSN switch + Raspberry Pi 4 nodes).</p>
                                         </div>
                                     </section>
+
+                                    <!-- Skills
+                                    <section id="skills" class="section-content mt-4">
+                                        <h2 class="title is-4 mb-3"><i class="fas fa-toolbox mr-2"></i>Skills</h2>
+
+                                        <div class="content">
+<ul>
+<li><strong>Programming:</strong> Python, Java, C, C++, Rust, C#, Bash (Shell scripting), SQL</li>
+<li><strong>Machine Learning:</strong> NumPy, scikit-learn, Pandas, Seaborn, SciPy, PyTorch</li>
+<li><strong>Formal Verification:</strong> Prism, Storm, NuSMV, Spin, SMT/SAT (Z3), CTL, LTL</li>
+<li><strong>DevOps &amp; Tools:</strong> Docker, Git, Makefile, LLVM, AFL, Klee</li>
+<li><strong>Robotics &amp; Simulation:</strong> ROS, CARLA</li>
+<li><strong>Languages:</strong> English, Bengali (native)</li>
+</ul>
+                                        </div>
+                                    </section>
+                                    -->
                                 </div>
                             </div>
 
@@ -540,7 +592,7 @@
                                                 <i class="fas fa-award text-warning"></i>
                                                 <div class="news-content">
                                                     <time datetime="2026-07"><strong>July 2026</strong></time>
-                                                    Awarded the <strong>PW-IASE Graduate Fellowship</strong> at UConn for 2026–2027, supporting research on runtime TSN reconfiguration and secure multi-camera communication.
+                                                    Awarded the <strong>PW-IASE Graduate Fellowship</strong> at UConn for 2026–2027, supporting research on runtime TSN reconfiguration.
                                                 </div>
                                             </li>
                                             <li>

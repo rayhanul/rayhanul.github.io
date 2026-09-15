@@ -1,0 +1,6 @@
+- **Programming:** Python, Java, C, C++, Rust, C#, Bash (Shell scripting), SQL
+- **Machine Learning:** NumPy, scikit-learn, Pandas, Seaborn, SciPy, PyTorch
+- **Formal Verification:** Prism, Storm, NuSMV, Spin, SMT/SAT (Z3), CTL, LTL
+- **DevOps & Tools:** Docker, Git, Makefile, LLVM, AFL, Klee
+- **Robotics & Simulation:** ROS, CARLA
+- **Languages:** English, Bengali (native)

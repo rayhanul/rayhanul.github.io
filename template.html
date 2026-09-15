@@ -36,7 +36,8 @@
                     {"@type": "CollegeOrUniversity", "name": "University of Dhaka"}
                 ],
                 "sameAs": [
-                    "https://github.com/rayhanul"
+                    "https://github.com/rayhanul",
+                    "https://scholar.google.com/citations?user=pO82RB8AAAAJ&hl=en"
                 ],
                 "knowsAbout": [
                     "Time-Sensitive Networking",
@@ -194,6 +195,10 @@
             .exp-entry { border-left: 4px solid var(--secondary-color); background: #f9fafb; padding: 0.9rem 1.25rem; border-radius: 0 8px 8px 0; margin-bottom: 0.75rem; }
             .exp-entry:last-child { margin-bottom: 0; }
 
+            .looking-for-work-banner { display: flex; align-items: flex-start; gap: 0.6rem; background: #f4faf6; border: 1px solid rgba(72, 199, 116, 0.35); border-left: 4px solid var(--accent-color); border-radius: 6px; padding: 0.85rem 1.1rem; margin-bottom: 1rem; font-size: 0.98rem; }
+            .looking-for-work-banner i { color: var(--accent-color); margin-top: 0.25rem; flex-shrink: 0; }
+            .looking-for-work-banner p { margin-bottom: 0 !important; }
+
             @media screen and (max-width: 768px) {
                 .section { padding: 1.25rem 1rem; }
                 .nav-container { gap: 0.25rem; }
@@ -306,6 +311,9 @@
                                     <a href="documents/Resume/Rayhanul_resume.pdf" class="button is-primary is-light" target="_blank" rel="noopener noreferrer">
                                         <i class="far fa-file-alt mr-1"></i> CV
                                     </a>
+                                    <a href="https://scholar.google.com/citations?user=pO82RB8AAAAJ&amp;hl=en" class="button is-info is-light" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-google-scholar mr-1"></i> Scholar
+                                    </a>
                                     <a href="https://github.com/rayhanul" class="button is-dark is-light" target="_blank" rel="noopener noreferrer">
                                         <i class="fa-brands fa-github mr-1"></i> GitHub
                                     </a>
@@ -344,6 +352,11 @@
                                         <a href="#projects" class="nav-item">
                                             <i class="fas fa-diagram-project"></i><span>Projects</span>
                                         </a>
+                                        <!--
+                                        <a href="#skills" class="nav-item">
+                                            <i class="fas fa-toolbox"></i><span>Skills</span>
+                                        </a>
+                                        -->
                                     </div>
                                 </nav>
                             </div>
@@ -355,6 +368,12 @@
                                         <h2 class="title is-4 mb-3"><i class="fas fa-user mr-2"></i>About</h2>
 {{ABOUT}}
                                     </section>
+
+                                    <!-- Looking for Work (status banner, intentionally not in the sidebar nav) -->
+                                    <div class="looking-for-work-banner">
+                                        <i class="fas fa-circle-dot"></i>
+                                        <div>{{LOOKING_FOR_WORK}}</div>
+                                    </div>
 
                                     <!-- Education -->
                                     <section id="education" class="section-content mt-4">
@@ -405,6 +424,16 @@
 
 {{PROJECTS}}
                                     </section>
+
+                                    <!-- Skills
+                                    <section id="skills" class="section-content mt-4">
+                                        <h2 class="title is-4 mb-3"><i class="fas fa-toolbox mr-2"></i>Skills</h2>
+
+                                        <div class="content">
+{{SKILLS}}
+                                        </div>
+                                    </section>
+                                    -->
                                 </div>
                             </div>
 
