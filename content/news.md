@@ -1,3 +1,11 @@
+## Sep 2026
+date: 2026-09
+icon: code-branch
+color: primary
+details: dpdk-bcm2711
+
+Patch enabling **DPDK 25.03** on the Raspberry Pi 4 / CM4 (BCM2711) with an Intel I210 NIC is under review for merge.
+
 ## July 2026
 date: 2026-07
 icon: award
@@ -10,7 +18,7 @@ date: 2026-05
 icon: award
 color: warning
 
-Awarded the **UConn Computer Science Predoctoral Fellowship**.
+Awarded the [**UConn Computer Science Predoctoral Fellowship**](https://computing.engineering.uconn.edu/2026/05/12/the-2026-graduate-student-fellowship-award-ceremony/).
 
 ## Spring 2026
 date: 2026-03
