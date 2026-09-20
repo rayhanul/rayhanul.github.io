@@ -100,8 +100,8 @@
   }
 
   // ---------- section layouts (ported from build.py) ----------
-  const rowCls = 'is-flex is-justify-content-space-between is-align-items-baseline mb-2';
-  const rowStyle = 'flex-wrap: wrap; gap: 0.5rem;';
+  const rowCls = 'is-flex is-justify-content-space-between is-align-items-baseline mb-1';
+  const rowStyle = 'flex-wrap: wrap; gap: 0.25rem 0.5rem;';
 
   function renderBoxes(entries) {
     return entries.map((e, idx) => {
@@ -110,7 +110,7 @@
       if (e.url) titleHtml = `<a href="${e.url}" target="_blank" rel="noopener noreferrer">${titleHtml}</a>`;
       const dateHtml = e.meta.date ? `<span class="is-size-7 has-text-grey">${escape(e.meta.date)}</span>` : '';
       const metaHtml = e.metaLines.map((line, i) =>
-        `<p class="${i === 0 ? 'is-size-6 mb-1' : 'is-size-7 has-text-grey mb-0'}">${inlineMd(line)}</p>`).join('\n');
+        `<p class="${i === 0 ? 'is-size-6 mb-0' : 'is-size-7 has-text-grey mb-0'}">${inlineMd(line)}</p>`).join('\n');
       const headerAndMeta = `<div class="${rowCls}" style="${rowStyle}"><strong>${titleHtml}</strong>${dateHtml}</div>\n${metaHtml}`;
       const inner = e.meta.logo
         ? `<div class="is-flex" style="gap: 0.85rem; align-items: flex-start;"><img class="edu-logo" src="${escape(e.meta.logo)}" alt="" /><div style="flex: 1; min-width: 0;">${headerAndMeta}</div></div>`
@@ -122,7 +122,7 @@
   function renderTimeline(entries) {
     return entries.map((e) => {
       const dateHtml = e.meta.date ? `<span class="is-size-7 has-text-grey">${escape(e.meta.date)}</span>` : '';
-      const metaHtml = e.metaLines.length ? `<p class="is-size-7 has-text-grey mb-2">${inlineMd(e.metaLines[0])}</p>` : '';
+      const metaHtml = e.metaLines.length ? `<p class="is-size-7 has-text-grey mb-1">${inlineMd(e.metaLines[0])}</p>` : '';
       return `<div class="exp-entry"><div class="${rowCls}" style="${rowStyle}"><strong>${inlineMd(e.title)}</strong>${dateHtml}</div>\n${metaHtml}${e.body}</div>`;
     }).join('\n\n');
   }
@@ -133,8 +133,8 @@
       const color = e.meta.color || 'success';
       const side = e.meta.side || (idx % 2 === 0 ? 'left' : 'right');
       const cls = side === 'left' ? 'topic-entry-left' : 'topic-entry-right';
-      return `<div class="mb-3 ${cls}"><div class="box" style="background: transparent; box-shadow: none; border: none; padding: 1rem 1.25rem;">` +
-        `<h3 class="title is-5 mb-2 short-underline" style="padding-bottom: 0.4rem;"><i class="fas fa-${icon} mr-2 text-${color}"></i>${inlineMd(e.title)}</h3>\n` +
+      return `<div class="mb-2 ${cls}"><div class="box" style="background: transparent; box-shadow: none; border: none; padding: 0.75rem 0.2rem;">` +
+        `<h3 class="title is-5 mb-1 short-underline" style="padding-bottom: 0.3rem;"><i class="fas fa-${icon} mr-2 text-${color}"></i>${inlineMd(e.title)}</h3>\n` +
         `${e.body}</div></div>`;
     }).join('\n\n');
     return `<div class="content">\n${cards}\n</div>`;
@@ -164,10 +164,10 @@
     return entries.map((e) => {
       const accent = resolveColor(e.meta.accent) || '#48c774';
       const tagHtml = e.meta.tag ? `<span class="tag is-success is-light">${escape(e.meta.tag)}</span>` : '';
-      const metaHtml = e.metaLines.length ? `<p class="is-size-7 has-text-grey mb-2">${inlineMd(e.metaLines[0])}</p>` : '';
+      const metaHtml = e.metaLines.length ? `<p class="is-size-7 has-text-grey mb-1">${inlineMd(e.metaLines[0])}</p>` : '';
       let body = e.body;
       if (body.startsWith('<p>')) body = '<p class="is-size-6 mb-0">' + body.slice(3);
-      return `<div class="box" style="border-left: 4px solid ${accent}; background: ${tint(accent)}; box-shadow: none; margin-bottom: 1rem;">` +
+      return `<div class="box" style="border-left: 4px solid ${accent}; background: ${tint(accent)}; box-shadow: none;">` +
         `<div class="${rowCls}" style="${rowStyle}"><strong>${inlineMd(e.title)}</strong>${tagHtml}</div>\n${metaHtml}${body}</div>`;
     }).join('\n\n');
   }
@@ -239,15 +239,15 @@
       const value = flag === 'copy'
         ? `<span class="copyable-email">${escape(text)}</span>\n<span class="copy-status is-hidden">Copied!</span>`
         : `<span>${escape(text)}</span>`;
-      return `<div class="mb-2"><i class="${iconClass(icon)} mr-2"></i>\n${value}</div>`;
+      return `<div class="mb-1"><i class="${iconClass(icon)} mr-2"></i>\n${value}</div>`;
     }).join('\n');
     const links = p.links.map(([icon, label, url, color]) =>
       `<a href="${attr(url)}" class="button is-${attr(color || 'link')} is-light" target="_blank" rel="noopener noreferrer"><i class="${iconClass(icon)} mr-1"></i> ${escape(label)}</a>`).join('\n');
     return `${photo}
 <div class="column">
   <h1 class="title is-2 has-text-centered-mobile mb-2">${escape(f.name || '')}</h1>
-  <p class="subtitle has-text-centered-mobile is-6 is-size-7-mobile mt-2">${inlineMd(f.subtitle || '')}</p>
-  <div class="content contact-info mb-3">${contact}</div>
+  <p class="subtitle has-text-centered-mobile is-6 is-size-7-mobile mt-1 mb-2">${inlineMd(f.subtitle || '')}</p>
+  <div class="content contact-info mb-2">${contact}</div>
   <div class="buttons">${links}</div>
 </div>`;
   }
@@ -260,8 +260,8 @@
 
   function renderSection(s, index) {
     const body = (LAYOUTS[s.layout] || LAYOUTS.text)(s.text);
-    return `<section id="${attr(s.id)}" class="section-content${index ? ' mt-4' : ''}">` +
-      `<h2 class="title is-4 mb-3"><i class="${iconClass(s.icon)} mr-2"></i>${escape(s.heading)}</h2>\n${body}</section>`;
+    return `<section id="${attr(s.id)}" class="section-content">` +
+      `<h2 class="title is-4 mb-2"><i class="${iconClass(s.icon)} mr-2"></i>${escape(s.heading)}</h2>\n${body}</section>`;
   }
 
   const banner = (text) => `<div class="looking-for-work-banner"><i class="fas fa-circle-dot"></i>` +

@@ -9,7 +9,6 @@ reconfiguration of Gate Control List schedules so flows can be added or removed 
 a full schedule recompute. Ongoing work explores agentic, reinforcement-learning-based
 network reconfiguration under safety and timing constraints.
 
-*Manuscripts in preparation.*
 
 ## Formal Verification & Autonomous Systems Safety
 icon: shield-halved
