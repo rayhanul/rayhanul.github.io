@@ -8,11 +8,11 @@ communication for secure edge-AI systems.
 One line of my work studies online TSN reconfiguration — adding or removing flows without recomputing the entire Gate Control List (GCL) schedule — so networks stay responsive to changing traffic while preserving the timing guarantees of existing time-critical flows. Looking
 ahead, I am exploring agentic, reinforcement-learning-driven reconfiguration, where a controller learns from traffic patterns and workloads to make timely decisions within defined safety and timing constraints.
 
-Before UConn, I earned my MS in Computer Science at [Iowa State University](https://www.cs.iastate.edu/)
+<!-- Before UConn, I earned my MS in Computer Science at [Iowa State University](https://www.cs.iastate.edu/)
 (Spring 2024), advised by [Dr. Tichakorn (Nok) Wongpiromsarn](https://tichakorn.dev/), where I worked on quantifying safety for interacting autonomous vehicles under partial observability
 — published at [IEEE ITSC 2024](documents/conferences/ieeeconf_paper_ITSC_2024.pdf).
 I hold MS and BS degrees in Software Engineering from the
-[University of Dhaka](http://www.du.ac.bd/), Bangladesh
+[University of Dhaka](http://www.du.ac.bd/), Bangladesh -->
 
 
 <!--
