@@ -19,7 +19,7 @@ footer: Md Rayhanul Islam • *Updated Sep'26*.
 
 ## Links
 <!-- - icon | label | url | Bulma color (primary, info, dark, link, ...) -->
-- regular/file-alt | CV | documents/Resume/Rayhanul_resume.pdf | primary
+<!-- - regular/file-alt | CV | documents/Resume/Rayhanul_resume.pdf | primary -->
 - brands/google-scholar | Scholar | https://scholar.google.com/citations?user=pO82RB8AAAAJ&hl=en | info
 - brands/github | GitHub | https://github.com/rayhanul | dark
 - paper-plane | Email | mailto:md_rayhanul.islam@uconn.edu | link
