@@ -14,7 +14,7 @@ footer: Md Rayhanul Islam • *Updated Sep'26*.
 ## Contact
 <!-- - icon | text | copy (click-to-copy) -->
 - envelope | md_rayhanul.islam@uconn.edu | copy
-- envelope | r97yhan@gmail.com | copy
+- envelope | rayhan.iit@gmail.com | copy
 - building | School of Computing, University of Connecticut, Storrs, CT
 
 ## Links
